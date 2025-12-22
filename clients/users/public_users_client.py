@@ -1,6 +1,6 @@
 from httpx import Response
 from typing import TypedDict
-from clietns.api_client import ApiClient
+from clients.api_client import ApiClient
 
 class CreateUserDict(TypedDict):
     """
