@@ -33,7 +33,7 @@ class UpdateExerciseApiDict(TypedDict):
 
 class ExercisesClient(ApiClient):
     """
-    Класс для работы с /api/v1/courses
+    Класс для работы с /api/v1/exercises
     """
 
     def get_exercises_api(self, query:GetExercisesApiDict) -> Response:
