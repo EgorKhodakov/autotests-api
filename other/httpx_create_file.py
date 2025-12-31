@@ -37,7 +37,7 @@ create_file_response = httpx.post(
     "http://localhost:8000/api/v1/files", data = {
     "filename": "pantera.png",
     "directory": "courses"},
-    files={"upload_file": open("./testdata/files/pantera.png", "rb")},
+    files={"upload_file": open("../testdata/files/pantera.png", "rb")},
     headers=auth_token
     )
 
