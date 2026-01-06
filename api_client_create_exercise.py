@@ -1,17 +1,20 @@
 
-from clients.courses.courses_client import get_courses_client, CreateCourseDict
-from clients.exercises.exercises_client import get_exercise_client, CreateExerciseApiDict
-from clients.files.files_client import get_files_client, CreateFileDict
-from clients.private_http_builder import AuthenticationUserDict
-from clients.users.public_users_client import get_public_users_client, CreateUserDict
+from clients.courses.courses_client import get_courses_client
+from clients.courses.courses_schema import CreateCourseSchema
+from clients.exercises.exercises_client import get_exercise_client
+from clients.exercises.exercises_schema import CreateExerciseApiSchema
+from clients.files.files_client import get_files_client
+from clients.files.files_schema import CreateFileRequestShema
+from clients.private_http_builder import AuthenticationUserSchema
+from clients.users.public_users_client import get_public_users_client
+from clients.users.users_schema import CreateUserRequestSchema
 from tools.fakers import random_email
-import json
 
 """
 Создаем пользователя
 """
 
-create_user_request = CreateUserDict(
+create_user_request = CreateUserRequestSchema(
     email = random_email(),
     password = "string",
     lastName = "string",
@@ -21,15 +24,15 @@ create_user_request = CreateUserDict(
 
 public_users_client = get_public_users_client()
 create_user_response = public_users_client.create_user(create_user_request)
-print("Создан клиент", json.dumps(create_user_response, indent=4))
+print("Создан клиент", create_user_response)
 
 """
 Инициализируем клиенты для работы с файлами, курсом 2и упражнениями
 """
 
-authentication_user_request = AuthenticationUserDict(
-    email = create_user_request["email"],
-    password = create_user_request["password"],
+authentication_user_request = AuthenticationUserSchema(
+    email = create_user_request.email,
+    password = create_user_request.password
 )
 
 
@@ -41,45 +44,45 @@ exercise_client = get_exercise_client(authentication_user_request)
 Загружаем файл
 """
 
-create_file_request = CreateFileDict(
+create_file_request = CreateFileRequestShema(
     filename = "pantera.png",
     directory = "courses",
     upload_file = "./testdata/files/pantera.png"
 )
 
 create_file_response = files_client.create_file(create_file_request)
-print("Загружен файл", json.dumps(create_file_response, indent=4))
+print("Загружен файл", create_file_response)
 
 """
 Создаем курс
 """
 
-create_course_request = CreateCourseDict(
+create_course_request = CreateCourseSchema(
     title="Python Course from Egorka",
-    maxScore=100,
-    minScore=10,
+    max_score=100,
+    min_score=10,
     description="Trying python",
-    estimatedTime="All life",
-    previewFileId=create_file_response['file']['id'],
-    createdByUserId=create_user_response['user']['id'],
+    estimated_time="All life",
+    preview_file_id=create_file_response.file.id,
+    created_by_user_id=create_user_response.user.id,
 )
 
 create_course_response = course_client.create_course(create_course_request)
-print("Создан курс", json.dumps(create_course_response, indent=4))
+print("Создан курс", create_course_response)
 
 """
 Создаем упражнение
 """
 
-create_exercise_request = CreateExerciseApiDict(
+create_exercise_request = CreateExerciseApiSchema(
     title = "API Test",
-    courseId = create_course_response['course']['id'],
-    maxScore = 20,
-    minScore = 5,
-    orderIndex = 10,
+    course_id = create_course_response.course.id,
+    max_score = 20,
+    min_score = 5,
+    order_index = 10,
     description = "Trying API",
-    estimatedTime = "two days"
+    estimated_time = "two days"
 )
 
 create_exercise_response = exercise_client.create_exercise(create_exercise_request)
-print("Создано упражнение", json.dumps(create_exercise_response, indent=4))
+print("Создано упражнение", create_exercise_response)

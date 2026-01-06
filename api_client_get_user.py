@@ -1,37 +1,37 @@
-from clients.private_http_builder import AuthenticationUserDict
-from clients.users.public_users_client import get_public_users_client, CreateUserDict
-from clients.users.private_users_client import PrivateUsersClient, get_private_users_client
+from clients.private_http_builder import AuthenticationUserSchema
+from clients.users.public_users_client import get_public_users_client
+from clients.users.private_users_client import  get_private_users_client
+from clients.users.users_schema import CreateUserRequestSchema
 from tools.fakers import random_email
-import json
 
 """Создание польззователя"""
 
-create_user_data = CreateUserDict(
+create_user_request = CreateUserRequestSchema(
     email = random_email(),
     password = "string",
-    lastName = "string",
-    firstName =  "string",
-    middleName = "string"
+    last_name = "string",
+    first_name =  "string",
+    middle_name = "string"
 )
 
 public_user_client = get_public_users_client()
-create_user_response = public_user_client.create_user(create_user_data)
+create_user_response = public_user_client.create_user(create_user_request)
 
-print(f'Пользователь создан {json.dumps(create_user_response, indent=2)}')
+print(f'Пользователь создан {create_user_response}')
 
 
 """Аутентификация пользователя"""
 
-authentication_dict = AuthenticationUserDict(
-    email = create_user_data["email"],
-    password = create_user_data["password"],
+authentication_dict = AuthenticationUserSchema(
+    email = create_user_request.email,
+    password = create_user_request.password,
 )
 
 private_user_client = get_private_users_client(authentication_dict)
 
-auth_user_response = private_user_client.get_user_id(create_user_response['user']['id'])
+auth_user_response = private_user_client.get_user_id(create_user_response.user.id)
 
-print("Получены данные пользователя: ", json.dumps(auth_user_response, indent=2))
+print("Получены данные пользователя: ", auth_user_response)
 
 
 
