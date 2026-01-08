@@ -14,7 +14,7 @@ class RefreshRequestSchema(BaseModel):
     """
     Структура запроса для обновления токена
     """
-    refresh_token: str = Field(alias="refreshToken", default=fake.sentance)
+    refresh_token: str = Field(alias="refreshToken", default=fake.sentence)
 
 
 class LoginResponseSchema(BaseModel):
