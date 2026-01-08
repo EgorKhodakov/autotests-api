@@ -2,25 +2,19 @@
 from clients.courses.courses_client import get_courses_client
 from clients.courses.courses_schema import CreateCourseSchema
 from clients.exercises.exercises_client import get_exercise_client
-from clients.exercises.exercises_schema import CreateExerciseApiSchema
+from clients.exercises.exercises_schema import CreateExerciseApiSchema, UpdateExerciseApiSchema
 from clients.files.files_client import get_files_client
 from clients.files.files_schema import CreateFileRequestShema
 from clients.private_http_builder import AuthenticationUserSchema
 from clients.users.public_users_client import get_public_users_client
 from clients.users.users_schema import CreateUserRequestSchema
-from tools.fakers import random_email
+
 
 """
 Создаем пользователя
 """
 
-create_user_request = CreateUserRequestSchema(
-    email = random_email(),
-    password = "string",
-    lastName = "string",
-    firstName = "string",
-    middleName = "string"
-)
+create_user_request = CreateUserRequestSchema()
 
 public_users_client = get_public_users_client()
 create_user_response = public_users_client.create_user(create_user_request)
@@ -45,8 +39,6 @@ exercise_client = get_exercise_client(authentication_user_request)
 """
 
 create_file_request = CreateFileRequestShema(
-    filename = "pantera.png",
-    directory = "courses",
     upload_file = "./testdata/files/pantera.png"
 )
 
@@ -58,11 +50,6 @@ print("Загружен файл", create_file_response)
 """
 
 create_course_request = CreateCourseSchema(
-    title="Python Course from Egorka",
-    max_score=100,
-    min_score=10,
-    description="Trying python",
-    estimated_time="All life",
     preview_file_id=create_file_response.file.id,
     created_by_user_id=create_user_response.user.id,
 )
@@ -75,14 +62,17 @@ print("Создан курс", create_course_response)
 """
 
 create_exercise_request = CreateExerciseApiSchema(
-    title = "API Test",
     course_id = create_course_response.course.id,
-    max_score = 20,
-    min_score = 5,
-    order_index = 10,
-    description = "Trying API",
-    estimated_time = "two days"
 )
 
 create_exercise_response = exercise_client.create_exercise(create_exercise_request)
 print("Создано упражнение", create_exercise_response)
+
+
+"""Обновляем упражнение"""
+update_exercise_request = UpdateExerciseApiSchema()
+exercise_id = create_exercise_response["exercise"]["id"]
+
+update_exercise_response = exercise_client.update_exercise(exercise_id, update_exercise_request)
+
+print("Упражнение обновлено", update_exercise_response)

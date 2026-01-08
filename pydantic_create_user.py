@@ -1,6 +1,6 @@
 import uuid
 from pydantic import BaseModel, Field, EmailStr
-from tools.fakers import random_email, random_password
+from tools.fakers import fake, random_password
 
 
 class UserSchema(BaseModel):

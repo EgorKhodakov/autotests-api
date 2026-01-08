@@ -1,11 +1,11 @@
 import httpx
 import json
-from tools.fakers import random_email, random_password
+from tools.fakers import fake, random_password
 
 """Создание пользователя"""
 
 create_user_data = {
-  "email": random_email(),
+  "email": fake.email(),
   "password": random_password(),
   "lastName": "string",
   "firstName": "string",
@@ -32,7 +32,7 @@ print("Авторизован пользователь:", json.dumps(auth_user_r
 """Обновление пользователя"""
 
 update_user_data = {
-  "email": random_email(),
+  "email": fake.email(),
   "lastName": create_user_data['lastName'],
   "firstName": create_user_data['firstName'],
   "middleName": create_user_data['middleName']

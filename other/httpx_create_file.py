@@ -1,5 +1,5 @@
 import httpx
-from tools.fakers import random_email
+from tools.fakers import fake
 import json
 
 
@@ -7,7 +7,7 @@ import json
 
 
 create_user_data = {
-  "email": random_email(),
+  "email": fake.email(),
   "password": "string",
   "lastName": "string",
   "firstName": "string",
