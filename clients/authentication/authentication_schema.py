@@ -6,7 +6,7 @@ class LoginRequestSchema(BaseModel):
     """
     Структура запроса для аутентификации пользователя
     """
-    email: str = Field(default=fake.email)
+    email: str = Field(default=fake.email())
     password: str = Field(default_factory=fake.password)
 
 

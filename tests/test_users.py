@@ -1,0 +1,21 @@
+from clients.users.public_users_client import get_public_users_client
+from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema
+from http import HTTPStatus
+from tools.assertions.schema import validate_json_schema
+from tools.assertions.base import assert_status_code
+from tools.assertions.users import assert_create_user_response
+
+
+def test_create_user():
+     public_client = get_public_users_client() # Инициализируем клиент
+
+     request = CreateUserRequestSchema() # создаем модель запроса для создания клиента
+     create_user_response = public_client.create_user_api(request) # Получаем ответ от апи после создания клиента
+     response_data  = CreateUserResponseSchema.model_validate_json(create_user_response.text)
+
+     assert_status_code(create_user_response.status_code, HTTPStatus.OK)
+     assert_create_user_response(request, response_data)
+
+     validate_json_schema(create_user_response.json(), response_data.model_json_schema())
+
+
