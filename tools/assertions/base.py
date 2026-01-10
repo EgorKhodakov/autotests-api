@@ -19,6 +19,13 @@ def assert_equal(actual: Any, expected: Any, name: str):
     )
 
 def assert_is_true(actual: Any, name: str):
+    """
+        Проверяет, что фактическое значение является истинным.
+
+        :param name: Название проверяемого значения.
+        :param actual: Фактическое значение.
+        :raises AssertionError: Если фактическое значение ложно.
+        """
     assert actual, (
         f'Field {name} incorrect'
         f'Actual {actual} != expected {True}'

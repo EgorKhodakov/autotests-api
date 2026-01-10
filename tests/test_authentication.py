@@ -9,20 +9,24 @@ from tools.assertions.schema import validate_json_schema
 
 
 def test_login():
+    """Создаем клиента"""
     public_users_client = get_public_users_client()
 
     create_user_request = CreateUserRequestSchema()
     public_users_client.create_user(create_user_request)
 
-    authenticated_user_request = LoginRequestSchema(
+    """Логинимся"""
+
+    login_user_request = LoginRequestSchema(
         email=create_user_request.email,
         password=create_user_request.password
     )
 
     authentication_client = get_authentication_client()
-    login_user_response = authentication_client.login_api(authenticated_user_request)
+    login_user_response = authentication_client.login_api(login_user_request)
     login_response_data = LoginResponseSchema.model_validate_json(login_user_response.text)
 
+    """Производим проверки"""
     assert_status_code(login_user_response.status_code, HTTPStatus.OK)
     validate_json_schema(login_user_response.json(), login_response_data.model_json_schema())
     assert_login_response(login_response_data)
