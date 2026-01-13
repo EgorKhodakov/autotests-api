@@ -14,7 +14,7 @@ def assert_status_code(actual: int, expected: int):
 
 def assert_equal(actual: Any, expected: Any, name: str):
     assert actual == expected, (
-        f"Field {name} incorrect"
+        f"Field {name} incorrect " 
         f'Actual {actual} != expected {expected}'
     )
 

@@ -1,15 +1,12 @@
-# def numbers(numbers: list) -> dict:
-#     summ = sum(numbers)
-import pytest
-
-@pytest.mark.slowr
-def test_heavy_calculation():
+class Character:
     pass
 
-@pytest.mark.integrationr
-def test_integration_with_external_api():
-    pass
 
-@pytest.mark.smoker
-def test_quick_check():
-    pass
+hero1 = Character()
+hero2 = Character()
+hero3 = hero1
+
+print(hero1 is hero2)
+print(hero1 is hero3)
+print(hero1 == hero2)
+print(hero2 == hero2)

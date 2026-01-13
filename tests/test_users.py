@@ -1,23 +1,37 @@
-from clients.users.public_users_client import get_public_users_client
-from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema
+from clients.users.private_users_client import PrivateUsersClient
+from clients.users.public_users_client import PublicUsersClient
+from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema
 from http import HTTPStatus
+from tests.conftest import UserFixture
 from tools.assertions.schema import validate_json_schema
 from tools.assertions.base import assert_status_code
-from tools.assertions.users import assert_create_user_response
+from tools.assertions.users import assert_create_user_response, assert_get_user_response
 import pytest
 
 @pytest.mark.users
 @pytest.mark.regression
-def test_create_user():
-     public_client = get_public_users_client() # Инициализируем клиент
+def test_create_user(public_users_client: PublicUsersClient):
 
      request = CreateUserRequestSchema() # создаем модель запроса для создания клиента
-     create_user_response = public_client.create_user_api(request) # Получаем ответ от апи после создания клиента
-     response_data  = CreateUserResponseSchema.model_validate_json(create_user_response.text)
+     response = public_users_client.create_user_api(request) # Получаем ответ от апи после создания клиента
+     response_data  = CreateUserResponseSchema.model_validate_json(response.text)
 
-     assert_status_code(create_user_response.status_code, HTTPStatus.OK)
+     assert_status_code(response.status_code, HTTPStatus.OK)
      assert_create_user_response(request, response_data)
 
-     validate_json_schema(create_user_response.json(), response_data.model_json_schema())
+     validate_json_schema(response.json(), response_data.model_json_schema())
+
+
+@pytest.mark.users
+@pytest.mark.regression
+def test_get_user_me(private_users_client: PrivateUsersClient, function_user: UserFixture):
+
+    response = private_users_client.get_user_me_api() # запрос к API
+    response_data = GetUserResponseSchema.model_validate_json(response.text) # валидация ответа с помощью pydantic
+
+    assert_status_code(response.status_code, HTTPStatus.OK) # проверка статус кода ответа
+    assert_get_user_response(response_data, function_user.response) # проверка тела ответа
+    validate_json_schema(response.json(), response_data.model_json_schema()) # валидация json схемы
+
 
 
