@@ -2,13 +2,13 @@ from pydantic import BaseModel, Field, ConfigDict
 from tools.fakers import fake
 
 
-class GetExercisesApiSchema(BaseModel):
+class GetExercisesSchema(BaseModel):
     """
     Структура запроса для получения упражнений
     """
     query: str
 
-class CreateExerciseApiSchema(BaseModel):
+class CreateExerciseSchema(BaseModel):
     """
     Структура запроса для создания упражнения
     """
@@ -22,7 +22,7 @@ class CreateExerciseApiSchema(BaseModel):
     description: str = Field(default_factory=fake.text)
     estimated_time: str = Field(alias="estimatedTime", default_factory=fake.estimated_time)
 
-class UpdateExerciseApiSchema(BaseModel):
+class UpdateExerciseSchema(BaseModel):
     """
     Структура запроса для изменения упражнения
     """
@@ -66,5 +66,11 @@ class GetExercisesResponseSchema(BaseModel):
 class UpdateExercisesResponseSchema(BaseModel):
     """
     Структура ответа на запрос обновления упражнения
+    """
+    exercise: ExerciseSchema
+
+class CreateExerciseResponseSchema(BaseModel):
+    """
+    Структура ответа на создание упражнения
     """
     exercise: ExerciseSchema
