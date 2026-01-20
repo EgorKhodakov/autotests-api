@@ -4,7 +4,7 @@ from clients.courses.courses_schema import CreateCourseSchema
 from clients.exercises.exercises_client import get_exercise_client
 from clients.exercises.exercises_schema import CreateExerciseSchema, UpdateExerciseSchema
 from clients.files.files_client import get_files_client
-from clients.files.files_schema import CreateFileRequestShema
+from clients.files.files_schema import CreateFileRequestSchema
 from clients.private_http_builder import AuthenticationUserSchema
 from clients.users.public_users_client import get_public_users_client
 from clients.users.users_schema import CreateUserRequestSchema
@@ -38,7 +38,7 @@ exercise_client = get_exercise_client(authentication_user_request)
 Загружаем файл
 """
 
-create_file_request = CreateFileRequestShema(
+create_file_request = CreateFileRequestSchema(
     upload_file = "./testdata/files/pantera.png"
 )
 

@@ -2,7 +2,7 @@ from pydantic import BaseModel, HttpUrl, Field
 from tools.fakers import fake
 
 
-class CreateFileRequestShema(BaseModel):
+class CreateFileRequestSchema(BaseModel):
     """
     Описание структуры запроса для создания файла
     """
@@ -20,8 +20,12 @@ class FileShema(BaseModel):
     directory: str
 
 
-class CreateFileResponseShema(BaseModel):
+class CreateFileResponseSchema(BaseModel):
     """
     Описание структуры ответа при создании файла
     """
+    file: FileShema
+
+
+class GetFileResponseSchema(BaseModel):
     file: FileShema

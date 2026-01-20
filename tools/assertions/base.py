@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Sized
 
 def assert_status_code(actual: int, expected: int):
     """
@@ -15,7 +15,8 @@ def assert_status_code(actual: int, expected: int):
 def assert_equal(actual: Any, expected: Any, name: str):
     assert actual == expected, (
         f"Field {name} incorrect " 
-        f'Actual {actual} != expected {expected}'
+        f'Actual:{actual}'
+        f'Expected:{expected}'
     )
 
 def assert_is_true(actual: Any, name: str):
@@ -29,4 +30,18 @@ def assert_is_true(actual: Any, name: str):
     assert actual, (
         f'Field {name} incorrect'
         f'Actual {actual} != expected {True}'
+    )
+
+
+def assert_length(actual: Sized, expected: Sized, name: str) -> None:
+    """
+    Функция позволяющая сравнивать длину двух обьектов
+    :param actual: значение фактически полученное от API
+    :param expected: значение ожидаемое отт API
+    :param name: название проверяемого параметра
+    :return: AssertionError если одно из значений не совпадает
+    """
+    assert len(actual) == len(expected), (
+        f"incorrect length {name}"
+        f"Actual: {len(actual)} Expected: {len(expected)}"
     )

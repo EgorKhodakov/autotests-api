@@ -2,7 +2,7 @@ from typing import TypedDict
 from httpx import Response
 from clients.api_client import ApiClient
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
-from clients.files.files_schema import CreateFileRequestShema, CreateFileResponseShema
+from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema
 
 
 class FilesClient(ApiClient):
@@ -19,7 +19,7 @@ class FilesClient(ApiClient):
         return self.get(f"/api/v1/files/{file_id}")
 
 
-    def create_file_api(self, request: CreateFileRequestShema) -> Response:
+    def create_file_api(self, request: CreateFileRequestSchema) -> Response:
         """
         Метод для загрузки файла
         :param request: filename, directory, upload_file
@@ -39,14 +39,14 @@ class FilesClient(ApiClient):
         """
         return self.delete(f"/api/v1/files/{file_id}")
 
-    def create_file(self, request: CreateFileRequestShema) -> CreateFileResponseShema:
+    def create_file(self, request: CreateFileRequestSchema) -> CreateFileResponseSchema:
         """
          Метод для получения ответа при создании файла
         :param request: filename, directory, upload_file
         :return: возвращает json ответ при создании файла
         """
         responce = self.create_file_api(request)
-        return CreateFileResponseShema.model_validate_json(responce.text)
+        return CreateFileResponseSchema.model_validate_json(responce.text)
 
 def get_files_client(user: AuthenticationUserSchema) -> FilesClient:
     """
