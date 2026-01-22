@@ -1,6 +1,6 @@
 
 from clients.courses.courses_client import get_courses_client
-from clients.courses.courses_schema import CreateCourseSchema
+from clients.courses.courses_schema import CreateCourseRequestSchema
 from clients.exercises.exercises_client import get_exercise_client
 from clients.exercises.exercises_schema import CreateExerciseSchema, UpdateExerciseSchema
 from clients.files.files_client import get_files_client
@@ -49,7 +49,7 @@ print("Загружен файл", create_file_response)
 Создаем курс
 """
 
-create_course_request = CreateCourseSchema(
+create_course_request = CreateCourseRequestSchema(
     preview_file_id=create_file_response.file.id,
     created_by_user_id=create_user_response.user.id,
 )

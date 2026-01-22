@@ -2,7 +2,7 @@ import pytest
 from pydantic import BaseModel
 
 from clients.courses.courses_client import CoursesClient, get_courses_client
-from clients.courses.courses_schema import CreateCourseSchema, CreateCourseResponseSchema
+from clients.courses.courses_schema import CreateCourseRequestSchema, CreateCourseResponseSchema
 from fixtures.files import FilesFixture
 from fixtures.users import UserFixture
 
@@ -10,7 +10,7 @@ class CoursesFixture(BaseModel):
     """
     Модель для агрегации возвращаемых данных фикстурой function_course
     """
-    request: CreateCourseSchema
+    request: CreateCourseRequestSchema
     response: CreateCourseResponseSchema
 
 
@@ -30,7 +30,7 @@ def function_course(function_file: FilesFixture,
     Создание курса
     """
 
-    request = CreateCourseSchema(
+    request = CreateCourseRequestSchema(
         previewFileId=function_file.response.file.id,
         createdByUserId=function_user.response.user.id,
     )

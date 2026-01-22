@@ -13,6 +13,13 @@ def assert_status_code(actual: int, expected: int):
     )
 
 def assert_equal(actual: Any, expected: Any, name: str):
+    """
+    Выполняет сравнение двух значений
+    :param actual: полученное от API значение
+    :param expected: ожидаемое от API значение
+    :param name: название проверяемого параметра
+    :return: AssertionError если проверяемые значения не равны
+    """
     assert actual == expected, (
         f"Field {name} incorrect " 
         f'Actual:{actual}'

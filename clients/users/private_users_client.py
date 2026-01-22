@@ -25,7 +25,7 @@ class PrivateUsersClient(ApiClient):
         """
         Метод частичного обновления пользователя
         :param user_id: уникальный идентификатор пользователя
-        :param data: email, lastName, firstName, middleName
+        :param request: email, lastName, firstName, middleName
         :return: ответ в виде обьекта httpx.Response
         """
         return self.patch(f"/api/v1/users/{user_id}", json=request.model_dump(by_alias=True))
