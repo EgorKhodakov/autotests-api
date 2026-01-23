@@ -8,7 +8,7 @@ class GetExercisesSchema(BaseModel):
     """
     query: str
 
-class CreateExerciseSchema(BaseModel):
+class CreateExerciseRequestSchema(BaseModel):
     """
     Структура запроса для создания упражнения
     """

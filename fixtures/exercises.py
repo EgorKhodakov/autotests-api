@@ -1,7 +1,7 @@
 import pytest
 from pydantic import BaseModel
 from clients.exercises.exercises_client import ExercisesClient, get_exercise_client
-from clients.exercises.exercises_schema import CreateExerciseSchema, CreateExerciseResponseSchema
+from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema
 from fixtures.courses import CoursesFixture
 from fixtures.users import UserFixture
 
@@ -10,7 +10,7 @@ class ExersiceFixture(BaseModel):
     """
     Модель для агрегации возвращенных данных фикстурой function_exercise
     """
-    request: CreateExerciseSchema
+    request: CreateExerciseRequestSchema
     response: CreateExerciseResponseSchema
 
 
@@ -29,7 +29,7 @@ def function_exercise(exercises_client : ExercisesClient, function_course: Cours
     """
     Создание упражнения
     """
-    request = CreateExerciseSchema(
+    request = CreateExerciseRequestSchema(
         courseId=function_course.response.course.id
     )
     response = exercises_client.create_exercise(request)

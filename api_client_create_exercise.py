@@ -2,7 +2,7 @@
 from clients.courses.courses_client import get_courses_client
 from clients.courses.courses_schema import CreateCourseRequestSchema
 from clients.exercises.exercises_client import get_exercise_client
-from clients.exercises.exercises_schema import CreateExerciseSchema, UpdateExerciseSchema
+from clients.exercises.exercises_schema import CreateExerciseRequestSchema, UpdateExerciseSchema
 from clients.files.files_client import get_files_client
 from clients.files.files_schema import CreateFileRequestSchema
 from clients.private_http_builder import AuthenticationUserSchema
@@ -61,7 +61,7 @@ print("Создан курс", create_course_response)
 Создаем упражнение
 """
 
-create_exercise_request = CreateExerciseSchema(
+create_exercise_request = CreateExerciseRequestSchema(
     course_id = create_course_response.course.id,
 )
 
