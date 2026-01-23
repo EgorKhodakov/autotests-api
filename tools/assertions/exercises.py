@@ -1,3 +1,4 @@
+from clients.errors_schema import InternalErrorResponseSchema
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, \
     ExerciseSchema, GetExerciseResponseSchema, UpdateExerciseRequestSchema, UpdateExercisesResponseSchema
 from tools.assertions.base import assert_equal
@@ -59,3 +60,13 @@ def assert_update_exercise_response(request: UpdateExerciseRequestSchema, respon
     assert_equal(request.order_index, response.exercise.order_index, "order_index")
     assert_equal(request.description, response.exercise.description, "description")
     assert_equal(request.estimated_time, response.exercise.estimated_time, "estimated_time")
+
+
+def assert_exercise_not_found_response(actual: InternalErrorResponseSchema):
+    """
+    проверяет, что ответ на внутреннюю ошибку (404) соответствует ожидаемому
+    :param actual: Полученное сообщение об ошибке
+    :return: AssertionError если ответ от API не соответствует ожидаемому
+    """
+    expected = InternalErrorResponseSchema(details="Exercise not found")
+    assert_equal(actual, expected, "detail")
