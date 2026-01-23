@@ -2,7 +2,7 @@
 from clients.courses.courses_client import get_courses_client
 from clients.courses.courses_schema import CreateCourseRequestSchema
 from clients.exercises.exercises_client import get_exercise_client
-from clients.exercises.exercises_schema import CreateExerciseRequestSchema, UpdateExerciseSchema
+from clients.exercises.exercises_schema import CreateExerciseRequestSchema, UpdateExerciseRequestSchema
 from clients.files.files_client import get_files_client
 from clients.files.files_schema import CreateFileRequestSchema
 from clients.private_http_builder import AuthenticationUserSchema
@@ -70,7 +70,7 @@ print("Создано упражнение", create_exercise_response)
 
 
 """Обновляем упражнение"""
-update_exercise_request = UpdateExerciseSchema()
+update_exercise_request = UpdateExerciseRequestSchema()
 exercise_id = create_exercise_response["exercise"]["id"]
 
 update_exercise_response = exercise_client.update_exercise(exercise_id, update_exercise_request)

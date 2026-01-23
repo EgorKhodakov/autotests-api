@@ -1,6 +1,6 @@
 from httpx import Response
 from clients.api_client import ApiClient
-from clients.exercises.exercises_schema import GetExercisesSchema, CreateExerciseRequestSchema, UpdateExerciseSchema, \
+from clients.exercises.exercises_schema import GetExercisesSchema, CreateExerciseRequestSchema, UpdateExerciseRequestSchema, \
     GetExerciseResponseSchema, GetExercisesResponseSchema, UpdateExercisesResponseSchema, CreateExerciseResponseSchema
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 
@@ -34,7 +34,7 @@ class ExercisesClient(ApiClient):
         """
         return self.post("/api/v1/exercises", json=request.model_dump(by_alias=True))
 
-    def update_exercise_api(self, exercise_id:str, request:UpdateExerciseSchema ) -> Response:
+    def update_exercise_api(self, exercise_id:str, request:UpdateExerciseRequestSchema ) -> Response:
         """
         Метод для обновления упраженения
         :param exercise_id:уникальный идентификатор упражнения
@@ -77,7 +77,7 @@ class ExercisesClient(ApiClient):
         """
         return self.create_exercise_api(request).json()
 
-    def update_exercise(self, exercise_id:str, request:UpdateExerciseSchema ) -> UpdateExercisesResponseSchema:
+    def update_exercise(self, exercise_id:str, request:UpdateExerciseRequestSchema ) -> UpdateExercisesResponseSchema:
         """
         Метод для обновления упражнения
         :param exercise_id: уникальный идентификатор упражнения

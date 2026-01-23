@@ -22,7 +22,7 @@ class CreateExerciseRequestSchema(BaseModel):
     description: str = Field(default_factory=fake.text)
     estimated_time: str = Field(alias="estimatedTime", default_factory=fake.estimated_time)
 
-class UpdateExerciseSchema(BaseModel):
+class UpdateExerciseRequestSchema(BaseModel):
     """
     Структура запроса для изменения упражнения
     """
