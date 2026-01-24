@@ -75,7 +75,8 @@ class ExercisesClient(ApiClient):
         :param request: title, courseId, maxScore, minScore, orderIndex, description, estimatedTime
         :return: ответ в формате json
         """
-        return self.create_exercise_api(request).json()
+        response = self.create_exercise_api(request)
+        return CreateExerciseResponseSchema.model_validate_json(response.text)
 
     def update_exercise(self, exercise_id:str, request:UpdateExerciseRequestSchema ) -> UpdateExercisesResponseSchema:
         """

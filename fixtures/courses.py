@@ -35,6 +35,6 @@ def function_course(function_file: FilesFixture,
         createdByUserId=function_user.response.user.id,
     )
     response = course_client.create_course(request)
-    return CoursesFixture(request=request,response=response,)
+    return CoursesFixture(request=request,response=response)
 
 

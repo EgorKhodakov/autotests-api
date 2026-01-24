@@ -6,7 +6,7 @@ class GetExercisesSchema(BaseModel):
     """
     Структура запроса для получения упражнений
     """
-    query: str
+    query: str = Field(alias="courseId")
 
 class CreateExerciseRequestSchema(BaseModel):
     """
