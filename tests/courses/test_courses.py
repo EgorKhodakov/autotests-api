@@ -13,6 +13,7 @@ from tools.allure.tags import AllureTag
 from tools.allure.features import AllureFeature
 from tools.allure.stories import AllureStory
 from tools.allure.epics import AllureEpic
+from allure_commons.types import Severity
 from tools.assertions.base import assert_status_code
 from tools.assertions.courses import assert_update_course_response, assert_get_courses_response, \
     assert_create_course_response
@@ -24,11 +25,15 @@ from tools.assertions.schema import validate_json_schema
 @allure.tag(AllureTag.COURSES, AllureTag.REGRESSION)
 @allure.epic(AllureEpic.LMS)
 @allure.feature(AllureFeature.COURSES)
+@allure.parent_suite(AllureEpic.LMS)
+@allure.suite(AllureFeature.COURSES)
 class TestCourses:
 
     @allure.story(AllureStory.UPDATE_ENTITY)
     @allure.tag(AllureTag.UPDATE_ENTITY)
     @allure.title("test update course")
+    @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureStory.UPDATE_ENTITY)
     def test_update_course(self, course_client: CoursesClient, function_course: CoursesFixture):
 
         request = UpdateCoursesRequestSchema()
@@ -42,6 +47,8 @@ class TestCourses:
     @allure.title("test get courses")
     @allure.tag(AllureTag.GET_ENTITIES)
     @allure.story(AllureStory.GET_ENTITIES)
+    @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureStory.GET_ENTITIES)
     def test_get_courses(self,
                                   course_client: CoursesClient,
                                   function_course: CoursesFixture,
@@ -59,6 +66,8 @@ class TestCourses:
     @allure.tag(AllureTag.CREATE_ENTITY)
     @allure.title("test create course")
     @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     def test_create_course(
             self,
             course_client: CoursesClient,
