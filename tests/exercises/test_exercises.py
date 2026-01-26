@@ -1,5 +1,6 @@
 from http import HTTPStatus
 
+import allure
 import pytest
 
 from clients.errors_schema import InternalErrorResponseSchema
@@ -19,7 +20,8 @@ from tools.assertions.schema import validate_json_schema
 @pytest.mark.regression
 @pytest.mark.exercises
 class TestExercises:
-    
+
+    @allure.title("test create exercise")
     def test_create_exercise(self,function_course: CoursesFixture, exercises_client: ExercisesClient) -> None:
         request = CreateExerciseRequestSchema(
             courseId=function_course.response.course.id
@@ -31,7 +33,7 @@ class TestExercises:
         validate_json_schema(response.json(), response_data.model_json_schema())
         assert_create_exercise(response_data, request)
 
-
+    @allure.title("test get exercise")
     def test_get_exercise(self, exercises_client: ExercisesClient, function_exercise: ExersiceFixture) -> None:
 
         response = exercises_client.get_exercise_api(exercise_id=function_exercise.response.exercise.id)
@@ -41,7 +43,7 @@ class TestExercises:
         validate_json_schema(response.json(), response_data.model_json_schema())
         assert_get_exercise(function_exercise.response, response_data)
 
-
+    @allure.title("test update exercise")
     def test_update_exercise(self, exercises_client: ExercisesClient, function_exercise: ExersiceFixture) -> None:
 
         request = UpdateExerciseRequestSchema()
@@ -55,7 +57,7 @@ class TestExercises:
         validate_json_schema(response.json(), response_data.model_json_schema())
         assert_update_exercise_response(request, response_data)
 
-
+    @allure.title("test delete exercise")
     def test_delete_exercise(self, exercises_client: ExercisesClient, function_exercise: ExersiceFixture) -> None:
 
         exercise_id = function_exercise.response.exercise.id
@@ -69,7 +71,7 @@ class TestExercises:
         assert_exercise_not_found_response(response_data)
         validate_json_schema(response.json(), response_data.model_json_schema())
 
-
+    @allure.title("test login")
     def test_get_exercises(
             self,
             exercises_client: ExercisesClient,

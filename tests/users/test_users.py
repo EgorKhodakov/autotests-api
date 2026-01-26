@@ -9,7 +9,9 @@ from tools.assertions.schema import validate_json_schema
 from tools.assertions.base import assert_status_code
 from tools.assertions.users import assert_create_user_response, assert_get_user_response
 import pytest
+import allure
 from tools.fakers import fake
+
 
 
 @pytest.mark.users
@@ -19,6 +21,7 @@ class TestUsers:
     @pytest.mark.parametrize("domain", ["mail.ru", "gmail.com", "example.com"],
                              ids=lambda p: f"User with domain {p} created"
                              )
+    @allure.title("Create user")
     def test_create_user(self, domain: str, public_users_client: PublicUsersClient):
         request = CreateUserRequestSchema(
             email=fake.email(domain=domain),
@@ -30,6 +33,7 @@ class TestUsers:
         assert_create_user_response(request, response_data)
         validate_json_schema(response.json(), response_data.model_json_schema())
 
+    @allure.title("Get user me")
     def test_get_user_me(self, private_users_client: PrivateUsersClient, function_user: UserFixture):
         response = private_users_client.get_user_me_api()  # запрос к API
         response_data = GetUserResponseSchema.model_validate_json(response.text)  # валидация ответа с помощью pydantic
