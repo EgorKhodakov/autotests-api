@@ -16,8 +16,8 @@ from tools.allure.stories import AllureStory
 from tools.allure.epics import AllureEpic
 from allure_commons.types import Severity
 from tools.assertions.base import assert_status_code
-from tools.assertions.exercises import assert_create_exercise, assert_get_exercise, assert_update_exercise_response, \
-    assert_exercise_not_found_response, assert_get_exercises_response
+from tools.assertions.exercises import assert_create_exercise_response, assert_update_exercise_response, \
+    assert_exercise_not_found_response, assert_get_exercise_response, assert_get_exercises_response
 from tools.assertions.schema import validate_json_schema
 
 
@@ -44,7 +44,7 @@ class TestExercises:
 
         assert_status_code(response.status_code, HTTPStatus.OK)
         validate_json_schema(response.json(), response_data.model_json_schema())
-        assert_create_exercise(response_data, request)
+        assert_create_exercise_response(response_data, request)
 
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.title("test get exercise")
@@ -58,7 +58,7 @@ class TestExercises:
 
         assert_status_code(response.status_code, HTTPStatus.OK)
         validate_json_schema(response.json(), response_data.model_json_schema())
-        assert_get_exercise(function_exercise.response, response_data)
+        assert_get_exercise_response(function_exercise.response, response_data)
 
     @allure.tag(AllureTag.UPDATE_ENTITY)
     @allure.title("test update exercise")

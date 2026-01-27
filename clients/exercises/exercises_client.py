@@ -1,3 +1,4 @@
+import allure
 from httpx import Response
 from clients.api_client import ApiClient
 from clients.exercises.exercises_schema import GetExercisesSchema, CreateExerciseRequestSchema, UpdateExerciseRequestSchema, \
@@ -10,6 +11,7 @@ class ExercisesClient(ApiClient):
     Класс для работы с /api/v1/exercises
     """
 
+    @allure.step("Get Exercises")
     def get_exercises_api(self, query:GetExercisesSchema) -> Response:
         """
         Метод для получения списка упражнений
@@ -18,6 +20,7 @@ class ExercisesClient(ApiClient):
         """
         return self.get("/api/v1/exercises", params=query.model_dump(by_alias=True))
 
+    @allure.step("Get exercise by id {exercise_id}")
     def get_exercise_api(self, exercise_id:str) -> Response:
         """
         Метод для получения конкретного упражнения
@@ -26,6 +29,7 @@ class ExercisesClient(ApiClient):
         """
         return self.get(f"/api/v1/exercises/{exercise_id}")
 
+    @allure.step("Create Exercise")
     def create_exercise_api(self, request:CreateExerciseRequestSchema ) -> Response:
         """
         Метод для создания упражнения
@@ -34,6 +38,7 @@ class ExercisesClient(ApiClient):
         """
         return self.post("/api/v1/exercises", json=request.model_dump(by_alias=True))
 
+    @allure.step("Update Exercise by id {exercise_id}")
     def update_exercise_api(self, exercise_id:str, request:UpdateExerciseRequestSchema ) -> Response:
         """
         Метод для обновления упраженения
@@ -43,6 +48,7 @@ class ExercisesClient(ApiClient):
         """
         return self.patch(f"/api/v1/exercises/{exercise_id}", json=request.model_dump(by_alias=True))
 
+    @allure.step("Delete Exercise by id {exercise_id}")
     def delete_exercise_api(self, exercise_id:str) -> Response:
         """
         Метод для удаления упражнения

@@ -1,7 +1,9 @@
+import allure
+
 from clients.errors_schema import ValidationErrorSchema, ValidationErrorResponseSchema, InternalErrorResponseSchema
 from tools.assertions.base import assert_equal, assert_length
 
-
+@allure.step("Check validation error")
 def assert_validation_error(actual: ValidationErrorSchema, expected: ValidationErrorSchema):
     """
     Функция для проверки ст структуры ошибка валидации
@@ -15,7 +17,7 @@ def assert_validation_error(actual: ValidationErrorSchema, expected: ValidationE
     assert_equal(actual.input, expected.input, "input")
     assert_equal(actual.context, expected.context, "context")
 
-
+@allure.step("Check validation error response")
 def assert_validation_error_response(actual: ValidationErrorResponseSchema, expected: ValidationErrorResponseSchema):
     """
     Функция проверяющая структуру ответа от API при ошибке валидации
@@ -28,6 +30,7 @@ def assert_validation_error_response(actual: ValidationErrorResponseSchema, expe
     for index, detail in enumerate(expected.details):
         assert_validation_error(actual.details[index], detail)
 
+@allure.step("Check internal error response")
 def assert_internal_error_response(actual:InternalErrorResponseSchema, expected: InternalErrorResponseSchema ):
     """
     Функция проверки ответа от апи при внутренней ошибке

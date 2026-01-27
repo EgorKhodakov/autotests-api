@@ -1,3 +1,5 @@
+import allure
+
 from clients.api_client import ApiClient
 from httpx import Response
 
@@ -11,6 +13,7 @@ class AuthenticationClient(ApiClient):
     Класс для работы с api/v1/authentication
     """
 
+    @allure.step("Authenticate user")
     def login_api(self, request: LoginRequestSchema) -> Response:
         """
         Метод для аутентификации пользователя
@@ -22,6 +25,7 @@ class AuthenticationClient(ApiClient):
             json=request.model_dump(by_alias=True)
         )
 
+    @allure.step("Refresh authentication token")
     def refresh_api(self, request: RefreshRequestSchema) -> Response:
         """
         Метод обновления токена юзера
