@@ -3,6 +3,7 @@ import allure
 from clients.errors_schema import ValidationErrorResponseSchema, ValidationErrorSchema, InternalErrorResponseSchema
 from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema, FileShema, \
     GetFileResponseSchema
+from config import settings
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_validation_error_response, assert_internal_error_response
 
@@ -14,7 +15,7 @@ def assert_create_file_response(request: CreateFileRequestSchema, response: Crea
     :param response: ответ полученный от API
     :return: AssertionError если одно хотя бы одно значение не совпадает
     """
-    expected_url = f"http://localhost:8000/static/{request.directory}/{request.filename}"
+    expected_url = f"{settings.http_client.url}static/{request.directory}/{request.filename}"
 
     assert_equal(response.file.directory, request.directory,"directory")
     assert_equal(response.file.filename, request.filename,"filename")

@@ -5,7 +5,7 @@ from clients.private_http_builder import AuthenticationUserSchema
 from clients.users.public_users_client import get_public_users_client
 from clients.users.users_schema import CreateUserRequestSchema
 from clients.files.files_schema import  CreateFileRequestSchema
-
+from config import settings
 
 """Создаем Клиента"""
 
@@ -23,7 +23,7 @@ auth_request = AuthenticationUserSchema(
     password = create_user_request.password,
 )
 
-create_file_request = CreateFileRequestSchema(upload_file = "./testdata/files/pantera.png")
+create_file_request = CreateFileRequestSchema(upload_file = settings.test_data.image_png_file)
 
 file_client = get_files_client(auth_request)
 create_file_response = file_client.create_file(create_file_request)
