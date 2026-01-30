@@ -6,6 +6,9 @@ from clients.files.files_schema import CreateFileRequestSchema, CreateFileRespon
 from config import settings
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_validation_error_response, assert_internal_error_response
+from tools.logger import get_logger
+
+logger = get_logger("FILE_ASSERTIONS")
 
 @allure.step("Check create file response")
 def assert_create_file_response(request: CreateFileRequestSchema, response: CreateFileResponseSchema):
@@ -15,6 +18,8 @@ def assert_create_file_response(request: CreateFileRequestSchema, response: Crea
     :param response: ответ полученный от API
     :return: AssertionError если одно хотя бы одно значение не совпадает
     """
+    logger.info("Check create file response")
+
     expected_url = f"{settings.http_client.url}static/{request.directory}/{request.filename}"
 
     assert_equal(response.file.directory, request.directory,"directory")
@@ -29,6 +34,8 @@ def assert_file(actual: FileShema, expected: FileShema):
     :param expected: Ожидаемый от API ответ
     :return: AssertionError если одно хотя бы одно значение не совпадает
     """
+    logger.info("Check file")
+
     assert_equal(actual.id, expected.id, "id")
     assert_equal(actual.filename, expected.filename, "filename")
     assert_equal(actual.directory, expected.directory, "directory")
@@ -42,6 +49,8 @@ def assert_get_file_response(request: GetFileResponseSchema, response: CreateFil
     :param response: ответ полученный от API
     :return: AssertionError если одно хотя бы одно значение не совпадает
     """
+    logger.info("Check get file response")
+
     assert_file(request.file, response.file)
 
 @allure.step("Check create file response with empty filename")
@@ -51,6 +60,8 @@ def assert_create_file_with_empty_filename_response(actual: ValidationErrorRespo
     :param actual: Ответ от API с ошибкой валидации которую необходимо проверить
     :return: AssertionError если одно хотя бы одно значение не совпадает
     """
+    logger.info("Check create file response with empty filename")
+
     expected = ValidationErrorResponseSchema(
         details=[
             ValidationErrorSchema(
@@ -71,6 +82,8 @@ def assert_create_file_with_empty_directory_response(actual: ValidationErrorResp
     :param actual: Ответ от API с ошибкой валидации которую необходимо проверить
     :return: AssertionError если одно хотя бы одно значение не совпадает
     """
+    logger.info("Check create file response with empty directory")
+
     expected = ValidationErrorResponseSchema(
         details=[
             ValidationErrorSchema(
@@ -90,6 +103,8 @@ def assert_file_not_found_response(actual: InternalErrorResponseSchema):
     :param actual: Ответ от API с внутренней ошибкой которую необходимо проверить
     :return: AssertionError если одно хотя бы одно значение не совпадает
     """
+    logger.info("Check file not found response")
+
     expected = InternalErrorResponseSchema(details="File not found")
     assert_internal_error_response(actual, expected)
 
@@ -101,6 +116,8 @@ def assert_get_file_with_incorrect_file_id(actual: ValidationErrorResponseSchema
     :param actual: Ответ от API с ошибкой валидации которую необходимо проверить
     :return: AssertionError если одно хотя бы одно значение не совпадает
     """
+    logger.info("Check get file response with incorrect file id")
+
     expected = ValidationErrorResponseSchema(
         details=[
             ValidationErrorSchema(

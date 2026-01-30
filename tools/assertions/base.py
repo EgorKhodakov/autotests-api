@@ -1,5 +1,8 @@
 from typing import Any, Sized
 import allure
+from tools.logger import get_logger
+
+logger = get_logger("BASE_ASSERTIONS")
 
 @allure.step("Check that response status code equals to {expected}")
 def assert_status_code(actual: int, expected: int):
@@ -9,6 +12,8 @@ def assert_status_code(actual: int, expected: int):
     :param expected: ожидаему статус код
     :return: AssertionError: Если статус-коды не совпадают.
     """
+    logger.info(f"Check that response status code equals to {expected}")
+
     assert actual == expected, (
         'Status cod incorect'
         f'Actual status code {actual} != expected status code {expected}'
@@ -23,6 +28,8 @@ def assert_equal(actual: Any, expected: Any, name: str):
     :param name: название проверяемого параметра
     :return: AssertionError если проверяемые значения не равны
     """
+    logger.info(f'Check that "{name}" equals to {expected}')
+
     assert actual == expected, (
         f"Field {name} incorrect " 
         f'Actual:{actual}'
@@ -38,6 +45,8 @@ def assert_is_true(actual: Any, name: str):
         :param actual: Фактическое значение.
         :raises AssertionError: Если фактическое значение ложно.
         """
+    logger.info(f'Check that "{name}" is true')
+
     assert actual, (
         f'Field {name} incorrect'
         f'Actual {actual} != expected {True}'
@@ -52,7 +61,10 @@ def assert_length(actual: Sized, expected: Sized, name: str) -> None:
     :param name: название проверяемого параметра
     :return: AssertionError если одно из значений не совпадает
     """
+
+
     with allure.step(f"Check that lenght of {name} actual to {len(expected)} "):
+        logger.info(f'Check that lenght of "{name}" actual to {len(expected)}')
         assert len(actual) == len(expected), (
             f"incorrect length {name}"
             f"Actual: {len(actual)} Expected: {len(expected)}"
