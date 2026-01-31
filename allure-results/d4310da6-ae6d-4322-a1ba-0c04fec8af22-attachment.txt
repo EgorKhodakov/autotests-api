@@ -1,0 +1,25 @@
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/users request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/authentication/login request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/files request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/courses request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/exercises request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/exercises/a9bd3d8d-796f-4ad7-8ac6-641ede2760c0 request method GET
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises/a9bd3d8d-796f-4ad7-8ac6-641ede2760c0
+[32mINFO    [0m BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+[32mINFO    [0m SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema
+[32mINFO    [0m EXERCISE_ASSERTIONS:exercises.py:57 Check get exercise response
+[32mINFO    [0m EXERCISE_ASSERTIONS:exercises.py:38 Check exercise
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "id" equals to a9bd3d8d-796f-4ad7-8ac6-641ede2760c0
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "title" equals to Foreign represent skill community son.
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "course_id" equals to 3a2d2b25-e8ec-4847-a644-efbd459c3bc0
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 53
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 10
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "order_index" equals to 69
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "description" equals to Husband item remember right above away modern. Life local pretty situation hotel fear politics fine.
+Determine ago stand rule around. Response know eye. No lead charge sure space each.
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 1 weeks

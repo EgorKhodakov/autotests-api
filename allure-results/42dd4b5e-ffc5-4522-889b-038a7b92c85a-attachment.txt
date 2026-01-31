@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMxVDE5OjEzOjE1LjEzMTE3MCIsInVzZXJfaWQiOiIyZDNhMmE3OS1iMGE2LTRjMTItYTI1MS0zNjU0ZTFmNjZmMTIifQ.DDizlEavhXDfrsokdRIyB3O5UsW3JFKhmSdfHGVcehk' \
+  -H 'content-length: 392' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Family pass husband.","maxScore":91,"minScore":2,"description":"Thought here task its movement kid side. Threat everything practice pay another. Determine career person raise camera pretty even. Place southern share manager buy light citizen.","estimatedTime":"3 weeks","previewFileId":"cbcc3a50-d0a9-48f9-a294-68583b93df44","createdByUserId":"2d3a2a79-b0a6-4c12-a251-3654e1f66f12"}'

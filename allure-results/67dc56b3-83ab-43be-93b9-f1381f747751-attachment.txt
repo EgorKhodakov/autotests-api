@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMxVDE5OjEzOjI0LjMzNDQ1NiIsInVzZXJfaWQiOiJmYjUzMTZjYS0yZDI4LTQyMTMtOTlhNy05MjM0ZThjOTFkYzAifQ.3Hil86dt_upjJF22nDagHb_i-Jg6PY4HJwzmPTMKbdk' \
+  -H 'content-length: 427' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Voice now dream before deep education issue.","maxScore":53,"minScore":2,"description":"Federal food low site. Against by group almost middle.\nCountry choice say natural task research but. Majority case hospital central small. Speech expert line draw test institution outside.","estimatedTime":"5 weeks","previewFileId":"4906a115-a60b-4a8c-ac86-720ac3dff2b3","createdByUserId":"fb5316ca-2d28-4213-99a7-9234e8c91dc0"}'

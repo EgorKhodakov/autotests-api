@@ -1,0 +1,32 @@
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/users request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/authentication/login request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/files request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/courses request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/courses?userId=2d3a2a79-b0a6-4c12-a251-3654e1f66f12 request method GET
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses?userId=2d3a2a79-b0a6-4c12-a251-3654e1f66f12
+[32mINFO    [0m BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+[32mINFO    [0m SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema
+[32mINFO    [0m COURSE_ASSERTIONS:courses.py:62 Check get courses response
+[32mINFO    [0m BASE_ASSERTIONS:base.py:67 Check that lenght of "courses" actual to 1
+[32mINFO    [0m COURSE_ASSERTIONS:courses.py:40 Check course
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "id" equals to 8e66df30-0e27-4573-95af-f2df80d1ced6
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "title" equals to Family pass husband.
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 91
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 2
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "description" equals to Thought here task its movement kid side. Threat everything practice pay another. Determine career person raise camera pretty even. Place southern share manager buy light citizen.
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 3 weeks
+[32mINFO    [0m FILE_ASSERTIONS:files.py:37 Check file
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "id" equals to cbcc3a50-d0a9-48f9-a294-68583b93df44
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "filename" equals to cc07bdbf-d55d-4ba6-8e31-e68d5abb3a65.png
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "directory" equals to tests
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "filename" equals to http://localhost:8000/static/tests/cc07bdbf-d55d-4ba6-8e31-e68d5abb3a65.png
+[32mINFO    [0m USER_ASSERTIONS:users.py:32 Check user
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "id" equals to 2d3a2a79-b0a6-4c12-a251-3654e1f66f12
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "email" equals to philliphunter@example.org
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "last_name" equals to Tate
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "first_name" equals to Michelle
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "middle_name" equals to Anna

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMxVDE5OjEzOjIwLjUyNzgxNiIsInVzZXJfaWQiOiIxMmNkOWMyMi02ZTIwLTQ1YjYtYWM1NS00YzhiYTlhNDBlNzUifQ.yYc_lg-c63ZPGcXYt0dvIq_TopX3C5fgxAGsgvDlDcI' \
+  -H 'content-length: 326' \
+  -H 'content-type: application/json' \
+  -d '{"title":"West process card.","maxScore":31,"minScore":2,"description":"Recognize nature strategy seek. Task two fact coach run imagine. Democratic institution up fund both whether yard.","estimatedTime":"1 weeks","previewFileId":"65f82ec1-c00b-4cd1-ab1f-142ba535a2a1","createdByUserId":"12cd9c22-6e20-45b6-ac55-4c8ba9a40e75"}'
