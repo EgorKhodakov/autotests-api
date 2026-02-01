@@ -1,0 +1,22 @@
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/users request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/authentication/login request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/files request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/courses request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/exercises request method POST
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/exercises/76c1ff5c-d4ef-4326-bb8e-f2d7380a050d request method PATCH
+[32mINFO    [0m HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises/76c1ff5c-d4ef-4326-bb8e-f2d7380a050d
+[32mINFO    [0m BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+[32mINFO    [0m SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema
+[32mINFO    [0m EXERCISE_ASSERTIONS:exercises.py:69 Check update exercise response
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "title" equals to City certain last wide decision month.
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 96
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 2
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "order_index" equals to 47
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "description" equals to Administration worry remain clearly measure rock lose can. Become mean across. Important on brother magazine notice.
+Use leg visit. Side college million almost.
+[32mINFO    [0m BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 5 weeks

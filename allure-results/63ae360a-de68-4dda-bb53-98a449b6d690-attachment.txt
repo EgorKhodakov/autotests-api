@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAxVDIxOjIzOjEyLjQ0NzE0MSIsInVzZXJfaWQiOiI2MGU1MjRiZi0xY2FlLTRhN2QtYWY5Ny01MjlhNGNhZTM0ODYifQ.W9VR5QQCakgSPrwG4W_xaSQe0SO5RDAqzN3DqpvZnZg' \
+  -H 'content-length: 394' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Present team hope appear.","maxScore":36,"minScore":1,"description":"Evidence especially example notice us voice national agreement. Simple forward value today around camera get pass. Network sometimes find cell others free carry environmental.","estimatedTime":"3 weeks","previewFileId":"f3e5cfa1-b286-460a-8073-fb81d1a77f71","createdByUserId":"60e524bf-1cae-4a7d-af97-529a4cae3486"}'

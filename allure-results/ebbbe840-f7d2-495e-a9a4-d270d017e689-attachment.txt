@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAxVDIxOjIzOjIwLjU4MDg4OCIsInVzZXJfaWQiOiIyNDM0NWQ4Ni0xYmQ5LTQyYTItYWMyNy03YWIxZjM2ZTU1NWEifQ.MtuhatDaru4nXyHOBdNOzCsstUHveolzuHRss5oTsic' \
+  -H 'content-length: 369' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Stop do myself worker effort.","courseId":"a5a4dbd2-4a59-4e1a-b9f4-9dbc5496acb1","maxScore":43,"minScore":6,"orderIndex":61,"description":"Nation ten program firm quite participant. Popular seek recent number though yourself.\nRise effect realize carry really show campaign. Point finally Congress service. Weight through specific.","estimatedTime":"2 weeks"}'

@@ -3,6 +3,7 @@ from httpx import Response
 from clients.api_client import ApiClient
 from clients.users.users_schema import GetUserResponseSchema, UpdateUserRequestSchema
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
+from tools.routes import APIRoutes
 
 
 class PrivateUsersClient(ApiClient):
@@ -13,7 +14,7 @@ class PrivateUsersClient(ApiClient):
         Получение текущего пользователя
         :return: ответ в виде обьекта httpx.Response
         """
-        return self.get("/api/v1/users/me")
+        return self.get(f"{APIRoutes.USERS}/me")
 
     @allure.step("Get user by id {user_id}")
     def get_user_id_api(self, user_id: str) -> Response:
@@ -22,7 +23,7 @@ class PrivateUsersClient(ApiClient):
         :param user_id: уникальный идентификатор пользователя
         :return: ответ в виде обьекта httpx.Response
         """
-        return self.get(f"/api/v1/users/{user_id}")
+        return self.get(f"{APIRoutes.USERS}/{user_id}")
 
     @allure.step("Update user {user_id}")
     def update_user_id_api(self, user_id: str, request: UpdateUserRequestSchema) -> Response:
@@ -32,7 +33,7 @@ class PrivateUsersClient(ApiClient):
         :param request: email, lastName, firstName, middleName
         :return: ответ в виде обьекта httpx.Response
         """
-        return self.patch(f"/api/v1/users/{user_id}", json=request.model_dump(by_alias=True))
+        return self.patch(f"{APIRoutes.USERS}/{user_id}", json=request.model_dump(by_alias=True))
 
     @allure.step("Delete user {user_id}")
     def delete_user_id_api(self, user_id: str) -> Response:
@@ -41,7 +42,7 @@ class PrivateUsersClient(ApiClient):
         :param user_id: уникальный идентификатор пользователя
         :return: ответ в виде обьекта httpx.Response
         """
-        return self.delete(f"/api/v1/users/{user_id}")
+        return self.delete(f"{APIRoutes.USERS}/{user_id}")
 
     def get_user_id(self, user_id: str) -> GetUserResponseSchema:
         """

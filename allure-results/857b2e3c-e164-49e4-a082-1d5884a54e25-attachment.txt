@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAxVDIxOjIzOjEyLjkyODQ5NCIsInVzZXJfaWQiOiIyZmNlMWJkYy0wNzJmLTRjNzQtOGVjZC04YzkyZjIyZGVjMjcifQ.Bl5hqnuxlvmkpRgKlIYGE1Xc0LOhCXmBRGYCt1_dwqs' \
+  -H 'content-length: 422' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Majority American president increase.","maxScore":28,"minScore":0,"description":"Employee best rise bar month. Offer response cover suddenly. Raise your democratic including surface.\nMachine despite head let. Watch some determine agent keep. Cell firm standard space oil.","estimatedTime":"2 weeks","previewFileId":"5c8ba351-030f-4c94-9f91-138dcfc9a7e5","createdByUserId":"2fce1bdc-072f-4c74-8ecd-8c92f22dec27"}'

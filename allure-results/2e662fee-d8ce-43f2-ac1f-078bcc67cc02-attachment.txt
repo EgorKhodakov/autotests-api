@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAxVDIxOjIzOjIwLjM3NTg0NyIsInVzZXJfaWQiOiI0MzAxYWMxNS1jYmNlLTRlZmItOTNlMy01NjBjYTYxMjQ5YjIifQ.CwpLpBWxaYRP-qElr-xAHc2VkL-3sGs36O8R82mqnOw' \
+  -H 'content-length: 363' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Help high individual produce market popular.","maxScore":54,"minScore":8,"description":"Decision wrong most laugh sister kid. Conference doctor admit level hour pay present realize. Idea data necessary talk third.","estimatedTime":"4 weeks","previewFileId":"73ca30d1-882e-4c8f-9f83-60fa27defdf7","createdByUserId":"4301ac15-cbce-4efb-93e3-560ca61249b2"}'

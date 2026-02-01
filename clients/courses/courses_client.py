@@ -5,6 +5,7 @@ from httpx import Response
 from clients.courses.courses_schema import (GetCoursesQuerySchema, CreateCourseRequestSchema,
                                             CreateCourseResponseSchema, UpdateCoursesRequestSchema)
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
+from tools.routes import APIRoutes
 
 
 class CoursesClient(ApiClient):
@@ -19,7 +20,7 @@ class CoursesClient(ApiClient):
         :param query: словарь с userId
         :return: Объект httpx.Response
         """
-        return self.get("/api/v1/courses", params=query.model_dump(by_alias=True))
+        return self.get(APIRoutes.COURSES, params=query.model_dump(by_alias=True))
 
     @allure.step("Get course by id {course_id}")
     def get_course_api(self, course_id: str) -> Response:
@@ -28,7 +29,7 @@ class CoursesClient(ApiClient):
         :param course_id: уникальный идентификатор курса
         :return: Объект httpx.Response
         """
-        return self.get(f"/api/v1/courses/{course_id}")
+        return self.get(f"{APIRoutes.COURSES}/{course_id}")
 
     @allure.step("Create Course")
     def create_course_api(self, request: CreateCourseRequestSchema) -> Response:
@@ -47,7 +48,7 @@ class CoursesClient(ApiClient):
         :param course_id: title, maxScore, minScore, description, estimatedTime
         :return: Объект httpx.Response
         """
-        return self.patch(f"/api/v1/courses/{course_id}", json=request.model_dump(by_alias=True))
+        return self.patch(f"{APIRoutes.COURSES}/{course_id}", json=request.model_dump(by_alias=True))
 
     @allure.step("Delete Courses by id {course_id}")
     def delete_course_api(self, course_id: str) -> Response:
@@ -56,7 +57,7 @@ class CoursesClient(ApiClient):
         :param course_id: уникальный идентификатор курса
         :return: Объект httpx.Response
         """
-        return self.delete(f"/api/v1/courses/{course_id}")
+        return self.delete(f"{APIRoutes.COURSES}/{course_id}")
 
 
     def create_course(self, request: CreateCourseRequestSchema) -> CreateCourseResponseSchema:
