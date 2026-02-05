@@ -1,0 +1,22 @@
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/users request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/authentication/login request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/files request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/courses request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/exercises request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/exercises/97400088-25b1-41e2-b9d7-75a0bcbbdc99 request method PATCH
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises/97400088-25b1-41e2-b9d7-75a0bcbbdc99
+INFO     BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+INFO     SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema
+INFO     EXERCISE_ASSERTIONS:exercises.py:69 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:31 Check that "title" equals to Shake factor at.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 43
+INFO     BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 4
+INFO     BASE_ASSERTIONS:base.py:31 Check that "order_index" equals to 18
+INFO     BASE_ASSERTIONS:base.py:31 Check that "description" equals to Less health wide parent forget reality. Behind support word former Mr chance. Face stock from property.
+Plant husband court certainly like statement alone heavy. Specific return physical.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 4 weeks

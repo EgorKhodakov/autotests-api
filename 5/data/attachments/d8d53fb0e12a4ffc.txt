@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDE2OjA1OjE0LjE5OTEzOCIsInVzZXJfaWQiOiJhYTI0YmQ3Ny1mMzQwLTRhZGYtODZkMy04MzAyMjE4YjAxY2IifQ.EY3rrmSyUX7R33eur474QYcESvO-PT2nB169-lIOzkU' \
+  -H 'content-length: 340' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fact form example suggest claim effort.","courseId":"fc6d26ed-eef4-4cfe-95e5-ca6e9cb72224","maxScore":16,"minScore":6,"orderIndex":70,"description":"Cut inside teacher perhaps partner all computer.\nRequire far reason entire star these into above. Turn other take in that. Direction tough soon realize.","estimatedTime":"3 weeks"}'

@@ -1,0 +1,20 @@
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/users request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/authentication/login request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/files request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/courses request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/courses/a10bbdff-7499-4ccc-af38-3a952c97cc3c request method PATCH
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses/a10bbdff-7499-4ccc-af38-3a952c97cc3c
+INFO     BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+INFO     COURSE_ASSERTIONS:courses.py:24 Check update course response
+INFO     BASE_ASSERTIONS:base.py:31 Check that "title" equals to Authority want subject soldier.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 96
+INFO     BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 1
+INFO     BASE_ASSERTIONS:base.py:31 Check that "description" equals to Source matter sister Republican. With down section probably discussion statement before prepare.
+Stop role skill station trial name real.
+High report year sound. Understand grow firm usually.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 3 weeks
+INFO     SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

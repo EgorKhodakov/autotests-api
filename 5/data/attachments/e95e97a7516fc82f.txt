@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDE2OjA1OjEzLjAwMjg4NiIsInVzZXJfaWQiOiIyOTkzOGQ1MC04ZWUxLTQwYmYtODg1OC0xY2FiNTE2NTk2MDMifQ.vNtoYKpOJle0oYmBZTlScWHywlZdJ0Wnuhe-6F8ujok' \
+  -H 'content-length: 405' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Next serious the pay message so rather.","maxScore":97,"minScore":8,"description":"Mother wonder job world authority heart you possible. Table among information word quality in.\nOnto road area listen start meeting. Draw could individual traditional east.","estimatedTime":"4 weeks","previewFileId":"3bf80e2f-eadc-43da-81df-a7a8f6ee824f","createdByUserId":"29938d50-8ee1-40bf-8858-1cab51659603"}'

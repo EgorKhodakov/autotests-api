@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDE2OjA1OjE1LjM5NTQ4NCIsInVzZXJfaWQiOiJlZTlkNGVmYi0zYTNhLTQzNWQtOGU4Yy03NDIxNDkwODY1ODAifQ.ewjKIXADdSFNo6FBk1E55XqH-GN08Ow0maaMV7a5aps' \
+  -H 'content-length: 415' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Thank against enter house style.","maxScore":59,"minScore":3,"description":"Since use increase somebody. Everyone throughout produce people play story. Allow pressure carry occur business cause.\nTask agent ready technology. Different light significant more notice.","estimatedTime":"5 weeks","previewFileId":"c586d623-7874-4ba9-b741-ed870859a5c9","createdByUserId":"ee9d4efb-3a3a-435d-8e8c-742149086580"}'

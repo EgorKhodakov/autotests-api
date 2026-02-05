@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDE2OjA1OjE1LjY2OTAxNyIsInVzZXJfaWQiOiJhYjczZjA5MC05MDhiLTQ3YWYtYjY5YS1jNDg1YTAzNGVjNzEifQ.ePrVUkE82QhHUc1p199nnGldjW2tOmuVl6ZMgCaqTU4' \
+  -H 'content-length: 408' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Agency above identify can energy care during head.","maxScore":48,"minScore":6,"description":"Foreign PM go decide news clearly where. But street pay. Behind material Mrs common finally source.\nInteresting father model. Summer rock give ball total resource.","estimatedTime":"3 weeks","previewFileId":"08d8252b-683d-43b0-93d9-c1cc6f2b24d3","createdByUserId":"ab73f090-908b-47af-b69a-c485a034ec71"}'

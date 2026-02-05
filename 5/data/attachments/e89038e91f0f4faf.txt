@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDE2OjA1OjExLjg2Njk2OSIsInVzZXJfaWQiOiI4M2Q3ODk1MS0yODE4LTQ0MzMtOGI4Yi0yODFiZWY4ZDU4N2IifQ.r_QxbDJXsIN_TayqZAqX-56jHrjvYUdnYsgmzquv3Kc' \
+  -H 'content-length: 384' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Easy second however pressure.","maxScore":18,"minScore":1,"description":"Will senior test line way relate system. Later bit child side.\nLoss upon girl throughout chair least perform phone. With crime wall position spring not popular.","estimatedTime":"4 weeks","previewFileId":"eaa73ae1-04d9-48c0-92f6-e4cdbddec75f","createdByUserId":"83d78951-2818-4433-8b8b-281bef8d587b"}'

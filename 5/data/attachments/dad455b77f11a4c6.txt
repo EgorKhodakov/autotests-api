@@ -1,0 +1,21 @@
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/users request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/authentication/login request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/files request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/courses request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/exercises request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+INFO     SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema
+INFO     EXERCISE_ASSERTIONS:exercises.py:20 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:31 Check that "title" equals to Fact form example suggest claim effort.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "course_id" equals to fc6d26ed-eef4-4cfe-95e5-ca6e9cb72224
+INFO     BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 16
+INFO     BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 6
+INFO     BASE_ASSERTIONS:base.py:31 Check that "order_index" equals to 70
+INFO     BASE_ASSERTIONS:base.py:31 Check that "description" equals to Cut inside teacher perhaps partner all computer.
+Require far reason entire star these into above. Turn other take in that. Direction tough soon realize.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 3 weeks
