@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDE2OjAxOjE3LjU0MDIyNyIsInVzZXJfaWQiOiI3ZGQyODIxOS02ODU3LTQ5YzAtOTI2Mi00YzFhNzEzOWUzOTAifQ.oaychFlqtTZwtYHIuY9jCzgpeEV0HHYnZ24uhgeLkUc' \
+  -H 'content-length: 395' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Population move you decision how will.","maxScore":4,"minScore":6,"description":"Small pretty local Democrat task. House law model half will present deal.\nProduct finally last reality. Daughter film yourself evidence strategy. Only appear hour.","estimatedTime":"5 weeks","previewFileId":"2a01bf2f-da40-4d31-b964-d32c0e5ee809","createdByUserId":"7dd28219-6857-49c0-9262-4c1a7139e390"}'

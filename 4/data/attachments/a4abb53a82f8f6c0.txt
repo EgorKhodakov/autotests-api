@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDE2OjAxOjE4Ljc0MDY0NCIsInVzZXJfaWQiOiI0ZTg5Y2Y1MC0zODk1LTQ5OTMtOWQ2Yy00NWY5NDhhYjE3ZjUifQ.75z5lwB2sormYMJDqi4wk7-3d43QpDPYwpMNmjC6XuU' \
+  -H 'content-length: 363' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Side officer game clearly peace option season response.","courseId":"03ac48cd-f7e2-41a0-9b63-d4a555cbb6c9","maxScore":16,"minScore":0,"orderIndex":13,"description":"Quite pass collection board meeting prevent begin. Plan several director house much throw such citizen.\nJoin head can. Statement even American life whole east.","estimatedTime":"2 weeks"}'
