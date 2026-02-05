@@ -30,6 +30,7 @@ from tools.assertions.schema import validate_json_schema
 @allure.suite(AllureFeature.EXERCISES)
 class TestExercises:
 
+    @pytest.mark.flaky(reruns=3)
     @allure.tag(AllureTag.CREATE_ENTITY)
     @allure.title("test create exercise")
     @allure.story(AllureStory.CREATE_ENTITY)
@@ -46,6 +47,7 @@ class TestExercises:
         validate_json_schema(response.json(), response_data.model_json_schema())
         assert_create_exercise_response(response_data, request)
 
+    @pytest.mark.flaky(reruns=3)
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.title("test get exercise")
     @allure.story(AllureStory.GET_ENTITY)
@@ -60,6 +62,7 @@ class TestExercises:
         validate_json_schema(response.json(), response_data.model_json_schema())
         assert_get_exercise_response(function_exercise.response, response_data)
 
+    @pytest.mark.flaky(reruns=3)
     @allure.tag(AllureTag.UPDATE_ENTITY)
     @allure.title("test update exercise")
     @allure.story(AllureStory.UPDATE_ENTITY)

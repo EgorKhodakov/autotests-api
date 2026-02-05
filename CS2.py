@@ -54,7 +54,7 @@ while True:
         print(f"Победил {defender.name}")
         break
     else:
-        defender.shots += 1
+        defender.shots +=   1
 
 
 
