@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjI3OjExLjE4ODA3OCIsInVzZXJfaWQiOiIxNjEzYzc3NS0zYjFjLTQ0NGYtOGIxOS0xZmRhZGM1ODNhZGYifQ._6_lzodUBiSuWezJHZVP_L8h-Y6pbu5fifcXHrQ1SEE' \
+  -H 'content-length: 382' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Girl brother month energy other far vote.","courseId":"216807c7-83c8-4a99-bcb7-8f540d722644","maxScore":100,"minScore":3,"orderIndex":24,"description":"International collection middle low.\nImpact might PM far her many. Parent action hair capital. International newspaper sell contain yard describe move. Herself plant list writer ago talk bag.","estimatedTime":"4 weeks"}'

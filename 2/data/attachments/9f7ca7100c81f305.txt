@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjI3OjA2LjM5ODIzOCIsInVzZXJfaWQiOiIxZGMzYWM3Ny1kOGI0LTRhOWEtYjUxNy0xZWUxZWRmMDdhMjEifQ.VTIVVMHnGMX5Mr2m-ANuzDd5sSvPDQlFJNaMdgASsUc' \
+  -H 'content-length: 291' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Ball adult prove face effect.","maxScore":16,"minScore":0,"description":"My plan peace sister. Fast put view. Prevent mention customer total.","estimatedTime":"1 weeks","previewFileId":"1f075b29-bde3-4404-b43b-e724288f6ea0","createdByUserId":"1dc3ac77-d8b4-4a9a-b517-1ee1edf07a21"}'

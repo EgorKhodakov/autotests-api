@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/users request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/authentication/login request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/files request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/courses request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+INFO     SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema
+INFO     COURSE_ASSERTIONS:courses.py:77 Check create course response
+INFO     BASE_ASSERTIONS:base.py:31 Check that "id" equals to Act trouble senior direction leave.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 50
+INFO     BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 1
+INFO     BASE_ASSERTIONS:base.py:31 Check that "description" equals to Just nor draw federal federal take matter. Her director lay because husband ready. Movie tough local.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 5 weeks
+INFO     BASE_ASSERTIONS:base.py:31 Check that "id" equals to dcf7ee9a-5769-47bc-85ac-ab2a90b72c07
+INFO     BASE_ASSERTIONS:base.py:31 Check that "id" equals to 3e4fdcde-6e83-4667-bf0c-324156c7b080

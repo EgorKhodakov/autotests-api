@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjI3OjA5LjAxODU0MiIsInVzZXJfaWQiOiI0Y2VlY2RmZC01NDljLTRkYWQtYjRjYy02MjYwNDUxMzEyMTYifQ.Q8EU5QjIz7ChTyLUA8HsURGOyTf1C9LopdXYC-LuqGs' \
+  -H 'content-length: 358' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Energy threat personal various never.","maxScore":74,"minScore":5,"description":"Friend bit performance industry strong difference usually. Wind table guy rather compare thought.\nExample behind consumer job.","estimatedTime":"4 weeks","previewFileId":"0e45541e-7c28-4752-8a96-b8046b778363","createdByUserId":"4ceecdfd-549c-4dad-b4cc-626045131216"}'

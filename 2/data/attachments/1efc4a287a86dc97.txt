@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/e97d6a6f-0549-45e0-84f9-b15dc0ae33df' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjI3OjA3LjU1MTY1MiIsInVzZXJfaWQiOiI2ZmZjNTkxOC1lMjFiLTQxZGQtYjIzZS0xNzBkYWZjMmRiM2UifQ.7A_RTy7osTv61WlkpIemd-nOZUdu_L9WDb2xxI5EI14' \
+  -H 'content-length: 227' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Send born paper set.","maxScore":84,"minScore":2,"description":"Join appear doctor she story. Statement suddenly structure success international manager. Third similar out hour food and Mr.","estimatedTime":"2 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/e7ce78d1-ff4e-4952-9e40-36d012cd8de8' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjI3OjA5LjAxODU0MiIsInVzZXJfaWQiOiI0Y2VlY2RmZC01NDljLTRkYWQtYjRjYy02MjYwNDUxMzEyMTYifQ.Q8EU5QjIz7ChTyLUA8HsURGOyTf1C9LopdXYC-LuqGs' \
+  -H 'content-length: 297' \
+  -H 'content-type: application/json' \
+  -d '{"title":"For miss test.","maxScore":16,"minScore":0,"orderIndex":45,"description":"Local stand magazine head.\nYourself stage while fly expect money physical. Whether week whether investment account he author determine. Share popular either find state threat continue.","estimatedTime":"5 weeks"}'

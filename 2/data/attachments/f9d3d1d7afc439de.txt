@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjI3OjA4Ljc0NTM5OSIsInVzZXJfaWQiOiJkOWZjN2YwMi1mNzRjLTRlNWEtYTJjYy01OTIyNWZiNzg2MzgifQ.xPN3sNF0X9yaVV8hm6LSB26uhba_2buo2xLqHkzlV4k' \
+  -H 'content-length: 307' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Since account minute.","courseId":"b95d0cda-d890-4a2b-8003-819ee4e54324","maxScore":98,"minScore":0,"orderIndex":41,"description":"Sea condition agree poor choose contain western. Common final give however type huge. Strong small likely marriage certainly find house a.","estimatedTime":"4 weeks"}'

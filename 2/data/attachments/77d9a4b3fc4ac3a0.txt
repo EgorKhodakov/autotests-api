@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjI3OjA3LjgyNTg2MCIsInVzZXJfaWQiOiIzZTRmZGNkZS02ZTgzLTQ2NjctYmYwYy0zMjQxNTZjN2IwODAifQ.IKhi1VSpdZ-N8hyXVX6IHMPw_2-VdLaDA2cLu4Y0ZA0' \
+  -H 'content-length: 330' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Act trouble senior direction leave.","maxScore":50,"minScore":1,"description":"Just nor draw federal federal take matter. Her director lay because husband ready. Movie tough local.","estimatedTime":"5 weeks","previewFileId":"dcf7ee9a-5769-47bc-85ac-ab2a90b72c07","createdByUserId":"3e4fdcde-6e83-4667-bf0c-324156c7b080"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjI3OjA4Ljc0NTM5OSIsInVzZXJfaWQiOiJkOWZjN2YwMi1mNzRjLTRlNWEtYTJjYy01OTIyNWZiNzg2MzgifQ.xPN3sNF0X9yaVV8hm6LSB26uhba_2buo2xLqHkzlV4k' \
+  -H 'content-length: 325' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Receive every doctor future nothing.","maxScore":73,"minScore":3,"description":"Weight market week cost simply.\nTraditional throw do visit before music. Boy medical job yeah.","estimatedTime":"1 weeks","previewFileId":"3c5ca457-b572-4ba9-8d9b-a60dec5fb462","createdByUserId":"d9fc7f02-f74c-4e5a-a2cc-59225fb78638"}'
