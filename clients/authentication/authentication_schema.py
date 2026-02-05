@@ -16,6 +16,14 @@ class RefreshRequestSchema(BaseModel):
     """
     refresh_token: str = Field(alias="refreshToken", default=fake.sentence)
 
+class TokenSchema(BaseModel):
+    """
+    Структура токена аутентификации
+    """
+    token_type: str = Field(alias="tokenType")
+    access_token: str = Field(alias="accessToken")
+    refresh_token: str = Field(alias="refreshToken")
+
 
 class LoginResponseSchema(BaseModel):
     """
@@ -24,10 +32,3 @@ class LoginResponseSchema(BaseModel):
     token: TokenSchema
 
 
-class TokenSchema(BaseModel):
-    """
-    Структура токена аутентификации
-    """
-    token_type: str = Field(alias="tokenType")
-    access_token: str = Field(alias="accessToken")
-    refresh_token: str = Field(alias="refreshToken")
