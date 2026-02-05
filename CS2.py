@@ -59,6 +59,8 @@ while True:
 
 
 
+
+
     # if defender.shots % 2 == 0:
     #     defender.attack(attacker, headshot=True)
     #     print(f"{defender.name} стреляет в {attacker.name}! 💥HEADSHOT!")
