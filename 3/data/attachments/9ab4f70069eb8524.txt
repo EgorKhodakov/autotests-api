@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/041c0e80-05b6-4eb9-b3e5-8556d5bf92b8' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjM1OjU0LjU0MzAzOCIsInVzZXJfaWQiOiIwNTg5ODNkOC1mNzE4LTQzNWEtODNjZS05MjZlYjFjNWJiMzkifQ.tAt6JNszL3mNKDPHFjI719LvKOARRc0An5U7LNDJkQc' \
+  -H 'content-length: 239' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Agency chair ahead most page box deep.","maxScore":14,"minScore":5,"description":"Remember vote article join all. Trouble thing movie report forward soon. Land push area themselves together commercial.","estimatedTime":"1 weeks"}'

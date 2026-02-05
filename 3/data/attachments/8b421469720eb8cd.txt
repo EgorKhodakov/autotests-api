@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjM1OjU1Ljc0NDI2NSIsInVzZXJfaWQiOiIyYmYxYTZkNy02NDZkLTQ5NWItYTlkNi05OThkMThjMWQ0ZTYifQ.uzWnErwHk9yuZoUlOyQ4Xp7QV9nnz-sii3dp0Vt5WQ0' \
+  -H 'content-length: 370' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Yet himself trouble blue perform.","maxScore":49,"minScore":6,"description":"Per fact heart. Visit official yet interest deep get TV.\nThought thousand behind none help. Television like Mrs myself onto. Go example phone.","estimatedTime":"4 weeks","previewFileId":"66c7acf7-8fdd-4c32-a680-f752d570805c","createdByUserId":"2bf1a6d7-646d-495b-a9d6-998d18c1d4e6"}'

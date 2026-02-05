@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjM1OjU0LjU0MzAzOCIsInVzZXJfaWQiOiIwNTg5ODNkOC1mNzE4LTQzNWEtODNjZS05MjZlYjFjNWJiMzkifQ.tAt6JNszL3mNKDPHFjI719LvKOARRc0An5U7LNDJkQc' \
+  -H 'content-length: 431' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Consumer rather have also property foot feel.","maxScore":44,"minScore":9,"description":"Back sea discover play idea head. Identify nearly all trial old.\nTreatment generation whole finish. Two likely control type party. See great almost resource around. Human maintain civil free.","estimatedTime":"4 weeks","previewFileId":"c52b4bec-33c3-457e-bfec-a548dbc46d59","createdByUserId":"058983d8-f718-435a-83ce-926eb1c5bb39"}'

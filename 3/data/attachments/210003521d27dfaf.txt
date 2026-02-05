@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjM1OjU2LjAxNzEzNSIsInVzZXJfaWQiOiIzNDZlNzEzZS1iOGY3LTRiMTEtYmM1Zi1jNDY4YzIxY2E2NDYifQ.bnFZRZwHYFvdmDh9Y_sCF2Qr-TNwGmXeV33ixdqFV9U' \
+  -H 'content-length: 320' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Write tree ever director.","maxScore":1,"minScore":2,"description":"Here million according form accept commercial. Challenge into meeting. Defense federal or young chair.","estimatedTime":"4 weeks","previewFileId":"5690fbee-2d3b-4637-823d-48d69676a5fe","createdByUserId":"346e713e-b8f7-4b11-bc5f-c468c21ca646"}'

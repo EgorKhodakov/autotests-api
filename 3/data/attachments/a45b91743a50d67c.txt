@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjM1OjU3LjkwMjgwMCIsInVzZXJfaWQiOiJmNmYyMDlhYy1lOTI2LTQ1NmQtODAzYS00MzE2M2QwNGQ1M2UifQ.K0RESnoWy-s4Ws3R45wWXOAvKb0ksogWp1-rwAYzIUw' \
+  -H 'content-length: 410' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Light may plant energy product just who that.","maxScore":19,"minScore":4,"description":"West camera bill. Since there their.\nSpecific manage statement but approach thank. Person civil industry able expert director Mrs. Market seem treatment evidence forward.","estimatedTime":"5 weeks","previewFileId":"247bd33e-526a-42ba-9915-8b26519b105d","createdByUserId":"f6f209ac-e926-456d-803a-43163d04d53e"}'

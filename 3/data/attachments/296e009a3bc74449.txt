@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/users request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/authentication/login request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/files request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/courses request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hook.py:25 ake request to http://localhost:8000/api/v1/courses/041c0e80-05b6-4eb9-b3e5-8556d5bf92b8 request method PATCH
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses/041c0e80-05b6-4eb9-b3e5-8556d5bf92b8
+INFO     BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+INFO     COURSE_ASSERTIONS:courses.py:24 Check update course response
+INFO     BASE_ASSERTIONS:base.py:31 Check that "title" equals to Agency chair ahead most page box deep.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 14
+INFO     BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 5
+INFO     BASE_ASSERTIONS:base.py:31 Check that "description" equals to Remember vote article join all. Trouble thing movie report forward soon. Land push area themselves together commercial.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 1 weeks
+INFO     SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

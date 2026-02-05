@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEzOjM1OjU1Ljc0NDI2NSIsInVzZXJfaWQiOiIyYmYxYTZkNy02NDZkLTQ5NWItYTlkNi05OThkMThjMWQ0ZTYifQ.uzWnErwHk9yuZoUlOyQ4Xp7QV9nnz-sii3dp0Vt5WQ0' \
+  -H 'content-length: 297' \
+  -H 'content-type: application/json' \
+  -d '{"title":"While investment fill fund grow.","courseId":"054de897-d78c-46b9-8ccb-cf053ea03a1f","maxScore":15,"minScore":4,"orderIndex":2,"description":"Choose station on goal speak. Human fact professional.\nOpen lawyer unit TV step economic several. Together plan this.","estimatedTime":"3 weeks"}'
