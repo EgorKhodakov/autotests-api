@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDEzOjQ3OjM0LjI4MTgzNyIsInVzZXJfaWQiOiI4NDI4OTgwYS1kYmYwLTQxNjMtOGFiNy05NTcyNmJmNDgxNTQifQ.kNzX7kYV4ovh6KKBNQby5FJCZxEz7lDawju-8L3Fqco' \
+  -H 'content-length: 282' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Turn strong later knowledge per across.","maxScore":32,"minScore":6,"description":"Fire teach several describe never successful law.","estimatedTime":"4 weeks","previewFileId":"7a4ca504-a041-48cc-9c0d-e4891698d330","createdByUserId":"8428980a-dbf0-4163-8ab7-95726bf48154"}'

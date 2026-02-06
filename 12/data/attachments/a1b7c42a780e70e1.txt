@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDEzOjQ3OjM1LjQ0MDA2OCIsInVzZXJfaWQiOiJjZWJmMTlmMS00NDU1LTQ1NzMtYWRmOS04MzZlNzFjN2I0MTYifQ.W2eNRUFR3pFZWBzn8luZSht41pLFofwSz62Dq8Jd2M4' \
+  -H 'content-length: 260' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Wall wrong better others low side.","maxScore":16,"minScore":7,"description":"Top should their city start act.","estimatedTime":"5 weeks","previewFileId":"327bcd60-67f3-48fd-b750-1af0b10852b0","createdByUserId":"cebf19f1-4455-4573-adf9-836e71c7b416"}'

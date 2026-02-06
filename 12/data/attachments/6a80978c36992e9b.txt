@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDEzOjQ3OjM5LjEzNjQ0NiIsInVzZXJfaWQiOiJmYzFhYmViZC01NDU5LTRlZDMtODkxYS03MjczZWUwMGZjNTEifQ.C1_emubHTp-Jjun2WoqZMoPVpEFr8ySF5ellhKPLKus' \
+  -H 'content-length: 277' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Son country man sense five receive us rather.","maxScore":45,"minScore":3,"description":"Team turn ok age media light somebody.","estimatedTime":"1 weeks","previewFileId":"ed38fb6d-5f38-42d0-890e-3af6eb76401c","createdByUserId":"fc1abebd-5459-4ed3-891a-7273ee00fc51"}'

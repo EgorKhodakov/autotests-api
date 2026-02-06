@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDEzOjQ3OjM2LjkzOTAwMCIsInVzZXJfaWQiOiI2MjI4NjBkYy1lYjMxLTRiYzItOThlMS03NmYxN2NlYWE2MDMifQ.RunI0H3FkbQgaz6O0hvn3GV2hgPoG4UObo-K-8W_5H0' \
+  -H 'content-length: 253' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Myself ball run vote power agree.","maxScore":28,"minScore":6,"description":"Spend sport subject close.","estimatedTime":"3 weeks","previewFileId":"3d6bda1c-3db6-4063-ac9f-0231f72485f9","createdByUserId":"622860dc-eb31-4bc2-98e1-76f17ceaa603"}'

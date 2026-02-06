@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDEzOjQ3OjM3Ljg3MDAzOCIsInVzZXJfaWQiOiIyNWFmNjIwMi0xMmY2LTRhZTctOTczZC02NjQyMjU2NTM4YmMifQ.yODqtInTl-oyO7_v7YJC9Y8T1HktZkMu4_f0ZY_IWiY' \
+  -H 'content-length: 247' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Walk lot early card.","maxScore":37,"minScore":2,"description":"The scientist popular start less.","estimatedTime":"3 weeks","previewFileId":"868725e7-0577-4037-bcf7-ee1fc8008e4c","createdByUserId":"25af6202-12f6-4ae7-973d-6642256538bc"}'
