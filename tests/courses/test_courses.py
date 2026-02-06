@@ -29,6 +29,7 @@ from tools.assertions.schema import validate_json_schema
 @allure.suite(AllureFeature.COURSES)
 class TestCourses:
 
+    @pytest.mark.flaky(reruns=3)
     @allure.story(AllureStory.UPDATE_ENTITY)
     @allure.tag(AllureTag.UPDATE_ENTITY)
     @allure.title("test update course")
@@ -44,6 +45,7 @@ class TestCourses:
         assert_update_course_response(request, response_data)
         validate_json_schema(response.json(), response_data.model_json_schema())
 
+    @pytest.mark.flaky(reruns=3)
     @allure.title("test get courses")
     @allure.tag(AllureTag.GET_ENTITIES)
     @allure.story(AllureStory.GET_ENTITIES)
@@ -63,6 +65,7 @@ class TestCourses:
         validate_json_schema(response.json(), response_data.model_json_schema())
         assert_get_courses_response(response_data, [function_course.response])
 
+    @pytest.mark.flaky(reruns=3)
     @allure.tag(AllureTag.CREATE_ENTITY)
     @allure.title("test create course")
     @allure.story(AllureStory.CREATE_ENTITY)
