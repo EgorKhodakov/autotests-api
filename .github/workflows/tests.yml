@@ -58,6 +58,7 @@ jobs:
   publish-report:
     runs-on: ubuntu-latest
     needs: run_tests
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
@@ -74,10 +75,10 @@ jobs:
         continue-on-error: true
         with:
           ref: gh-pages
-          path: gh-pages
+          path: ./gh-pages
 
       - name: Generates Allure Report with history
-        uses: simple-elf/allure-report-action@v1.13
+        uses: simple-elf/allure-report-action@v1.12
         if: always()
         with:
           allure_results: allure-results
