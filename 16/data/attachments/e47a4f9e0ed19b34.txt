@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjIwOjQyLjc4MzY1NCIsInVzZXJfaWQiOiJkZGU3YzdlYS1jOTNkLTRkOTUtYmI4MC0wYmI3ODBhOWQ3M2IifQ.R9IHNByIZYMQJ1zKBgszjkraXYBV2hRfLvquEJ09hhg' \
+  -H 'content-length: 274' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Gun dream sure growth rate benefit deep possible.","maxScore":67,"minScore":4,"description":"Subject by medical simply onto.","estimatedTime":"3 weeks","previewFileId":"e7ad4ced-bf25-4f8b-88e1-b2957930dec3","createdByUserId":"dde7c7ea-c93d-4d95-bb80-0bb780a9d73b"}'

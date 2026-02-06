@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjIwOjQ1LjMxNTI1MCIsInVzZXJfaWQiOiI0MmUzMGQ3Ni1mOTQ0LTQ2MjgtODhmOS1mZDhhYjljMjA0YzUifQ.yYCyWX8Ag0KPnnVOOITB6-uO0BIR8o1c7xxdB-o1ZMY' \
+  -H 'content-length: 277' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Attorney develop specific capital forget analysis child.","maxScore":43,"minScore":4,"description":"Have their usually subject.","estimatedTime":"2 weeks","previewFileId":"bd6b757a-02fb-48e1-926d-ce4302cd7067","createdByUserId":"42e30d76-f944-4628-88f9-fd8ab9c204c5"}'

@@ -1,0 +1,24 @@
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/users request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/authentication/login request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/files request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/courses request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/exercises request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/exercises/9b6d756f-8005-4cb7-b7d3-46278cb1896b request method GET
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises/9b6d756f-8005-4cb7-b7d3-46278cb1896b
+INFO     BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+INFO     SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema
+INFO     EXERCISE_ASSERTIONS:exercises.py:57 Check get exercise response
+INFO     EXERCISE_ASSERTIONS:exercises.py:38 Check exercise
+INFO     BASE_ASSERTIONS:base.py:31 Check that "id" equals to 9b6d756f-8005-4cb7-b7d3-46278cb1896b
+INFO     BASE_ASSERTIONS:base.py:31 Check that "title" equals to Commercial condition reduce couple.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "course_id" equals to 7894ae4b-a9cd-4df4-ad20-f53f7a4edb31
+INFO     BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 81
+INFO     BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 0
+INFO     BASE_ASSERTIONS:base.py:31 Check that "order_index" equals to 92
+INFO     BASE_ASSERTIONS:base.py:31 Check that "description" equals to Social stop between remember face after.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 5 weeks

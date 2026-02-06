@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjIwOjQzLjA0NDkyMiIsInVzZXJfaWQiOiJmNGQwOWJkYS0zZmEzLTQ1OWMtYjIyZS00NzNjMTUwYTgzNGUifQ.dzTzr2ygsNrNceW88Jy7mhDf3agJzvl0bijpgClUyp0' \
+  -H 'content-length: 274' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Now perform garden include material ball worry loss.","maxScore":44,"minScore":1,"description":"Stand back government every.","estimatedTime":"3 weeks","previewFileId":"9fa29f76-8e03-4ec8-9173-f534ce7935e5","createdByUserId":"f4d09bda-3fa3-459c-b22e-473c150a834e"}'

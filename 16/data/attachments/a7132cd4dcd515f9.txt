@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjIwOjQ0LjE4Mjg3NiIsInVzZXJfaWQiOiJiOWJhM2IyNi1kNzNjLTQ5N2MtOGY2Yy1iN2NjZDEyMDE4MjgifQ.Li1K6Q0oB-PgiXorw92znbk-7wVUd27RDGjLCcBbIcY' \
+  -H 'content-length: 216' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Call easy hand item.","courseId":"3e28ea65-78e4-4af5-8708-3cd36b05aaff","maxScore":64,"minScore":2,"orderIndex":62,"description":"Environmental understand true leader generation.","estimatedTime":"1 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjIwOjQzLjkyNDIxNCIsInVzZXJfaWQiOiIwOTE3YzVmOS00MTNiLTQzMDctODdiMi0zOTI0ZmY0MWFlMzUifQ.tHsNdviH4VUe2SKzTCEM_G7Vo5s70BElkMzjNW7DE5I' \
+  -H 'content-length: 259' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Forward any one scene fish.","maxScore":44,"minScore":7,"description":"Control history hotel water once form.","estimatedTime":"3 weeks","previewFileId":"c776224e-832d-43ce-b9ef-8f51c9ffcedd","createdByUserId":"0917c5f9-413b-4307-87b2-3924ff41ae35"}'
