@@ -1,0 +1,24 @@
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/users request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/authentication/login request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/files request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/courses request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/exercises request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/exercises/b1469a32-ff36-442c-9187-4fd86252c3db request method GET
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises/b1469a32-ff36-442c-9187-4fd86252c3db
+INFO     BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+INFO     SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema
+INFO     EXERCISE_ASSERTIONS:exercises.py:57 Check get exercise response
+INFO     EXERCISE_ASSERTIONS:exercises.py:38 Check exercise
+INFO     BASE_ASSERTIONS:base.py:31 Check that "id" equals to b1469a32-ff36-442c-9187-4fd86252c3db
+INFO     BASE_ASSERTIONS:base.py:31 Check that "title" equals to Main accept everything something.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "course_id" equals to 81718e8f-c096-4ab4-a456-e5b722c2c396
+INFO     BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 99
+INFO     BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 8
+INFO     BASE_ASSERTIONS:base.py:31 Check that "order_index" equals to 81
+INFO     BASE_ASSERTIONS:base.py:31 Check that "description" equals to Develop raise nothing decade maybe road.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 2 weeks

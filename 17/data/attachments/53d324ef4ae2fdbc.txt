@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjMxOjAwLjk3NTc4NiIsInVzZXJfaWQiOiIzM2E3MzFlYy05NGM4LTQ0ZTEtYmFjZi1kOGU0ZjczYjUxOTUifQ.XWxDXwcO1O956i6aUVVMP0HXBtlfNZC844O-AZkxsD8' \
+  -H 'content-length: 272' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Blue picture deep tax trouble.","maxScore":63,"minScore":5,"description":"All conference through apply eight stage social.","estimatedTime":"4 weeks","previewFileId":"07694a4b-1d5e-4309-8900-89f6742e3490","createdByUserId":"33a731ec-94c8-44e1-bacf-d8e4f73b5195"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjMxOjAzLjA2NDY5MyIsInVzZXJfaWQiOiIzY2I5Y2E4My1mOGRjLTQ0NTYtYTVmOC0xMWFmMTFkZDhmYmIifQ.qk4w_mpMEQeDoc0Gf6-jYH3jfDcOnaFJt9QpE5vTcUk' \
+  -H 'content-length: 221' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Main accept everything something.","courseId":"81718e8f-c096-4ab4-a456-e5b722c2c396","maxScore":99,"minScore":8,"orderIndex":81,"description":"Develop raise nothing decade maybe road.","estimatedTime":"2 weeks"}'

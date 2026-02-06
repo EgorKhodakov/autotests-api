@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjMxOjAwLjM4ODYxMSIsInVzZXJfaWQiOiIwOWYxYTY0NS1iOGM5LTQyZmMtODYyMC01N2Q3OTA4Y2Q1ZDcifQ.jOpSGU6vTGEbIcei08whbf-C0_bTWTUzl49_chX8MyU' \
+  -H 'content-length: 260' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Hard heart include all two.","maxScore":37,"minScore":3,"description":"Moment control less wonder matter vote.","estimatedTime":"5 weeks","previewFileId":"42717385-9a2b-4077-aebb-0b8cd10e21c8","createdByUserId":"09f1a645-b8c9-42fc-8620-57d7908cd5d7"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjMwOjU5LjQxMTY2NSIsInVzZXJfaWQiOiIxZGZmOWU0OS03ODAxLTQ2OTUtYmE1YS0xZjEzZjdmNTBkOGMifQ.JtjT3wiX30OeWmA4gQ1X2AI3crRQoDsy4ZZvyj_LFgs' \
+  -H 'content-length: 254' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Keep my factor.","maxScore":30,"minScore":10,"description":"Specific around fund new lawyer look impact.","estimatedTime":"3 weeks","previewFileId":"60a7ba4f-3513-4a06-a1fb-2abb2e2130b8","createdByUserId":"1dff9e49-7801-4695-ba5a-1f13f7f50d8c"}'

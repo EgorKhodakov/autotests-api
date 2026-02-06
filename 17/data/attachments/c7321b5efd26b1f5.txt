@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjMxOjAzLjMzOTM4MCIsInVzZXJfaWQiOiIyNDc5OGIwOC1iOGJlLTQ5MjktOTQ5My03ZjVjYTcwMTE4OGYifQ.WecUdjLwxOsqLHjYu-eYEGYxdC6BpwWAqurPJjKxtf8' \
+  -H 'content-length: 206' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Let why agency prove training close.","courseId":"20c3254d-6e85-4366-92cf-02feb15e133d","maxScore":46,"minScore":4,"orderIndex":49,"description":"Size list clearly try.","estimatedTime":"1 weeks"}'

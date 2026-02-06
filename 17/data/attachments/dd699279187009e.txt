@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjMxOjA2LjkzMzc4MCIsInVzZXJfaWQiOiI0ZWNmMDA1MC0zYzNmLTQ1MzQtYjY4Ny03YWI0ZTA3NGQ5MTEifQ.WdmsUXqOjHT_-78NYIs1d0q4o--BHiQZ6aHB2slId5Q' \
+  -H 'content-length: 289' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Seem quickly shake free rule trade people attack.","maxScore":93,"minScore":6,"description":"Network discussion personal one least way cup.","estimatedTime":"1 weeks","previewFileId":"510c09e0-8abc-4d70-b2a4-255570c4e2ba","createdByUserId":"4ecf0050-3c3f-4534-b687-7ab4e074d911"}'

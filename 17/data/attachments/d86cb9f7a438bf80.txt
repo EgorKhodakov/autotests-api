@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjMxOjA0LjI5NjQ2NyIsInVzZXJfaWQiOiI1NjU0ODMxOS0wNDYxLTQ3N2MtYmIzNS1iYTg3YmQ5OGY5ZDYifQ.xn4LEAGNvYiBIAZ0c91SeibSJLK-3289Lrum0wzSLBc' \
+  -H 'content-length: 253' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Likely create blood floor.","maxScore":46,"minScore":4,"description":"Discover final to bill treatment.","estimatedTime":"1 weeks","previewFileId":"3d74fab0-9824-4de6-82a7-d082b568dcf6","createdByUserId":"56548319-0461-477c-bb35-ba87bd98f9d6"}'

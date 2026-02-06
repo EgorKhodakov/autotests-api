@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjMxOjAyLjE0ODc0NiIsInVzZXJfaWQiOiIwNmMyNjZiOS0xMDdkLTQxODQtOTE4Ny0wYmQyY2U2M2QwN2IifQ.sqcP_em2yVLbpLYw0GkL32l9h5WTOuKbmiv430JjGlI' \
+  -H 'content-length: 233' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Simply sing stage director about PM today.","courseId":"ef5149a4-8e3d-49ff-8e76-56868fb081be","maxScore":95,"minScore":7,"orderIndex":13,"description":"Across send particular moment though skill.","estimatedTime":"5 weeks"}'

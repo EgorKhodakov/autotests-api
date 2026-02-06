@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjMxOjAzLjMzOTM4MCIsInVzZXJfaWQiOiIyNDc5OGIwOC1iOGJlLTQ5MjktOTQ5My03ZjVjYTcwMTE4OGYifQ.WecUdjLwxOsqLHjYu-eYEGYxdC6BpwWAqurPJjKxtf8' \
+  -H 'content-length: 273' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Just appear beyond buy surface sport.","maxScore":74,"minScore":2,"description":"Clearly strategy skill state do it couple.","estimatedTime":"4 weeks","previewFileId":"68b8b90b-5bb7-4397-85eb-9b840c31f37a","createdByUserId":"24798b08-b8be-4929-9493-7f5ca701188f"}'

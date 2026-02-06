@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjMxOjAyLjE0ODc0NiIsInVzZXJfaWQiOiIwNmMyNjZiOS0xMDdkLTQxODQtOTE4Ny0wYmQyY2U2M2QwN2IifQ.sqcP_em2yVLbpLYw0GkL32l9h5WTOuKbmiv430JjGlI' \
+  -H 'content-length: 278' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Use training party reduce cost.","maxScore":92,"minScore":3,"description":"Especially great management along process who effect.","estimatedTime":"4 weeks","previewFileId":"97a4fddf-be15-442b-816c-8d1c9459382d","createdByUserId":"06c266b9-107d-4184-9187-0bd2ce63d07b"}'

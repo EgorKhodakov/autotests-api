@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/3438f499-0b67-4792-8b3d-8eb7b262a33e' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjMxOjAwLjM4ODYxMSIsInVzZXJfaWQiOiIwOWYxYTY0NS1iOGM5LTQyZmMtODYyMC01N2Q3OTA4Y2Q1ZDcifQ.jOpSGU6vTGEbIcei08whbf-C0_bTWTUzl49_chX8MyU' \
+  -H 'content-length: 138' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Choose song and might.","maxScore":68,"minScore":7,"description":"Because company official low free.","estimatedTime":"5 weeks"}'
