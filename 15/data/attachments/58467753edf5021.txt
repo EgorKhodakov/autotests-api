@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjE3OjIzLjczMzczMCIsInVzZXJfaWQiOiIxZGQyZjFiMi0yNTY3LTQ0ODktOTA0MC1iZTlkMWZiMWYzN2EifQ.vD_tJtBDNLTKSDKOs_qg2g-auPcjgs643vzxH-evD3w' \
+  -H 'content-length: 278' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Center avoid special treat memory similar for.","maxScore":12,"minScore":9,"description":"Adult medical serious analysis memory.","estimatedTime":"2 weeks","previewFileId":"2a5656e4-3042-42e3-a5a2-d430c3a3364a","createdByUserId":"1dd2f1b2-2567-4489-9040-be9d1fb1f37a"}'

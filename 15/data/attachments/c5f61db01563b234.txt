@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/users request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/authentication/login request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/files request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/courses request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+INFO     SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema
+INFO     COURSE_ASSERTIONS:courses.py:77 Check create course response
+INFO     BASE_ASSERTIONS:base.py:31 Check that "id" equals to Billion your or billion.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 77
+INFO     BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 10
+INFO     BASE_ASSERTIONS:base.py:31 Check that "description" equals to Others professional discussion soldier.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 2 weeks
+INFO     BASE_ASSERTIONS:base.py:31 Check that "id" equals to ef0ce406-8bf2-403a-8235-aaf1b57ae033
+INFO     BASE_ASSERTIONS:base.py:31 Check that "id" equals to cd3d02e7-ff2a-4299-a981-9f956906a516

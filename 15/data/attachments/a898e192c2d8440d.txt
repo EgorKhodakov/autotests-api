@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjE3OjI0LjAwODc3OSIsInVzZXJfaWQiOiIzNDgyYjYzOS1hMTRkLTRkZTYtYTBlYi1kNjJhMWIwMTcxZGUifQ.oPqOXACfaLdFwAJAstBT0qhN68z0fd2ZZ_gZjqtq71A' \
+  -H 'content-length: 260' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Arrive activity agreement all include.","maxScore":6,"minScore":4,"description":"Himself direction court fish.","estimatedTime":"1 weeks","previewFileId":"7f4ff64c-2520-4af1-b55f-7a3200cc0d52","createdByUserId":"3482b639-a14d-4de6-a0eb-d62a1b0171de"}'

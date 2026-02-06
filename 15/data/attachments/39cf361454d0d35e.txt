@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/ac02ae62-5c92-4ed6-8118-b4e4a2b4b0f3' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjE3OjIyLjUzNDQ4MiIsInVzZXJfaWQiOiJhOWMxMzk5Ni1iMzQyLTQyMGMtOTQwNS03YmU2ODQ2OGQyMzEifQ.zyr7PMxAMfzOTyNLgOIx-w4x9LJYoH9p5ATZeqsJKpI' \
+  -H 'content-length: 160' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Early when learn require suggest apply.","maxScore":56,"minScore":0,"description":"Street Mr real car view agent positive.","estimatedTime":"5 weeks"}'

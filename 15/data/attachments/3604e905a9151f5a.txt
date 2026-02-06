@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/118136fe-b9e0-485c-8152-351b3783e4a6' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjE3OjI0LjAwODc3OSIsInVzZXJfaWQiOiIzNDgyYjYzOS1hMTRkLTRkZTYtYTBlYi1kNjJhMWIwMTcxZGUifQ.oPqOXACfaLdFwAJAstBT0qhN68z0fd2ZZ_gZjqtq71A' \
+  -H 'content-length: 201' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Environmental particular wall employee until president plant.","maxScore":49,"minScore":4,"orderIndex":44,"description":"Any serious nature whether quality behind.","estimatedTime":"2 weeks"}'

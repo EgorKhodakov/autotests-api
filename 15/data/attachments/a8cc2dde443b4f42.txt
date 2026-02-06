@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjE3OjI2LjE2MTEyNiIsInVzZXJfaWQiOiJhODE3YWRkMS02MWJmLTRhNWUtYmI2OC1kOTlkNDdjN2MzMjEifQ.QvRM1PGuP0-ytxFvWb0XdQW-geiv5wKcdGBQoawgM6M' \
+  -H 'content-length: 280' \
+  -H 'content-type: application/json' \
+  -d '{"title":"That half some owner term anyone able instead.","maxScore":52,"minScore":10,"description":"May between mind little road professor.","estimatedTime":"4 weeks","previewFileId":"00c2f2ac-fbd0-4828-b13a-7720d99526ca","createdByUserId":"a817add1-61bf-4a5e-bb68-d99d47c7c321"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjE3OjI1LjIwNzgzNiIsInVzZXJfaWQiOiJmODNkM2E0MS0wMGFkLTRmMTktOWU5My1jZDMzNGU3YjIxZjkifQ.BNTggG4JwgFSwyq5EZfZeSahf5ZFbE10vUpTJa-KOhc' \
+  -H 'content-length: 280' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Real network hospital sense under.","maxScore":95,"minScore":7,"description":"Well certainly wear president onto idea design food.","estimatedTime":"4 weeks","previewFileId":"569979a5-c366-43a3-91b6-d6da264f0167","createdByUserId":"f83d3a41-00ad-4f19-9e93-cd334e7b21f9"}'

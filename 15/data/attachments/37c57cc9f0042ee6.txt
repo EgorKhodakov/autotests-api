@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDIxOjE3OjI3LjM3OTE5OCIsInVzZXJfaWQiOiIzMDU0ZDljOS05MDNhLTRlYTMtOTI0MS0xMzQzYjViZWJlYmIifQ.pX3ouA0J5VgibGQKd_5vfKw9xympYzVaD0IK7bp-nec' \
+  -H 'content-length: 267' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Pattern possible yeah develop hit itself.","maxScore":21,"minScore":9,"description":"Kitchen go identify sing wonder.","estimatedTime":"2 weeks","previewFileId":"43e177cf-e262-4f81-bfb4-a937fc177fb6","createdByUserId":"3054d9c9-903a-4ea3-9241-1343b5bebebb"}'
