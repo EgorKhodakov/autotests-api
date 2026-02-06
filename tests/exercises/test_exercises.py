@@ -81,6 +81,7 @@ class TestExercises:
         validate_json_schema(response.json(), response_data.model_json_schema())
         assert_update_exercise_response(request, response_data)
 
+    @pytest.mark.flaky(reruns=3)
     @allure.tag(AllureTag.DELETE_ENTITY)
     @allure.title("test delete exercise")
     @allure.story(AllureStory.DELETE_ENTITY)

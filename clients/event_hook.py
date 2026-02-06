@@ -22,7 +22,7 @@ def log_request_event_hook(request: Request):
     Логируем информацию от отправленном запросе
     :param request: Обьект запроса HTTPX
     """
-    loger.info(f"ake request to {request.url} request method {request.method}")
+    loger.info(f"Make request to {request.url} request method {request.method}")
 
 def log_response_event_hook(response: Response):
     """
