@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDE0OjA0OjM5LjYzNjIwMyIsInVzZXJfaWQiOiI1NjhlYjU4OC1kZmJiLTQ1ZjQtYTAzNy00MmZlZDQ3M2FlZjQifQ.QHoIeLDWeYb-jExqJR4hvmkCnQz4NOfGMMefjf6N5K0' \
+  -H 'content-length: 211' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Culture loss bring area fast political.","courseId":"1c770a82-b24f-4307-9273-6449c2adf6b6","maxScore":43,"minScore":3,"orderIndex":1,"description":"Treatment network during.","estimatedTime":"3 weeks"}'

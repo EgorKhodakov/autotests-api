@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDE0OjA0OjM5LjkwOTIxNiIsInVzZXJfaWQiOiI0OTcxMTA0Yy0yYmY1LTQ1OTktOTg5Ny00Yjc5MDU0MDJlMGUifQ.Kof7U1S16eaKfANeeM9C_PLmJfJ9J3lW-VzruI5WxNs' \
+  -H 'content-length: 269' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Position cup particular simply return.","maxScore":91,"minScore":7,"description":"Care high speak recognize focus fine.","estimatedTime":"3 weeks","previewFileId":"49c5a0cb-0d1a-4723-aebb-3cc3651f2bfc","createdByUserId":"4971104c-2bf5-4599-9897-4b7905402e0e"}'

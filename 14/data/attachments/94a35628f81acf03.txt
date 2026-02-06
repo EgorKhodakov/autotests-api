@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDE0OjA0OjM3LjUwNTUzNCIsInVzZXJfaWQiOiIzZGY0YWJhNy01NjNiLTRkODctYmU2My0yMzkzMjRkOGEyYTQifQ.CdDbsrQckEKNbeY_RDnVKk14bk61NlOZjzroK8D7RGU' \
+  -H 'content-length: 248' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Rate lawyer clear allow laugh smile.","maxScore":59,"minScore":4,"description":"Skin team science.","estimatedTime":"5 weeks","previewFileId":"6bc396b6-76cb-4ab5-b1a9-a7da903008a9","createdByUserId":"3df4aba7-563b-4d87-be63-239324d8a2a4"}'

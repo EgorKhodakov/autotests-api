@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDE0OjA0OjM4LjQyNjI0MyIsInVzZXJfaWQiOiJmMzg1YTg3MC1jY2JiLTQyZTgtOWMzNS1lMTUwNzdlMjQ5NTUifQ.XrjLBkVhQFmJkEnSgXR7GGThGhuDL_Xpr2bjH_UyvZw' \
+  -H 'content-length: 267' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Plant despite movie friend others still.","maxScore":31,"minScore":2,"description":"Whole federal because allow step.","estimatedTime":"1 weeks","previewFileId":"291abdbc-341d-4cad-8bff-94184a1a3da0","createdByUserId":"f385a870-ccbb-42e8-9c35-e15077e24955"}'

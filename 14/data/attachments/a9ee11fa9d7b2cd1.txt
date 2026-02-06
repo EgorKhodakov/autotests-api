@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/users request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/authentication/login request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/files request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/courses request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+INFO     SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema
+INFO     COURSE_ASSERTIONS:courses.py:77 Check create course response
+INFO     BASE_ASSERTIONS:base.py:31 Check that "id" equals to Rate lawyer clear allow laugh smile.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 59
+INFO     BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 4
+INFO     BASE_ASSERTIONS:base.py:31 Check that "description" equals to Skin team science.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 5 weeks
+INFO     BASE_ASSERTIONS:base.py:31 Check that "id" equals to 6bc396b6-76cb-4ab5-b1a9-a7da903008a9
+INFO     BASE_ASSERTIONS:base.py:31 Check that "id" equals to 3df4aba7-563b-4d87-be63-239324d8a2a4

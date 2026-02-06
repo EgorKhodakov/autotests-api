@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDE0OjA0OjQwLjg2MzQxNSIsInVzZXJfaWQiOiI0ZGMyN2MwOC05MjQzLTRhZmEtYjZiOC0zN2E1ODI0NjE3OGIifQ.oEU1w-P414Oc89l1lXNyy0aWLmJ9XPuUexH3Hk8QqaE' \
+  -H 'content-length: 271' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Responsibility move matter blue hot science.","maxScore":64,"minScore":10,"description":"Air low choose fill break while.","estimatedTime":"2 weeks","previewFileId":"e8f1bb5b-0063-4fa9-a09b-d92c43286f5e","createdByUserId":"4dc27c08-9243-4afa-b6b8-37a58246178b"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/5c6beea7-dd53-460f-98f2-e798e96832fa' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA2VDE0OjA0OjM3LjIzMDg0MiIsInVzZXJfaWQiOiI3ODIzODQ4OS0yOTViLTRhYTEtYmEzNS0yMmUzMmRiZWEzNmIifQ.gd-LKza4h1CxVda9ngKtRTasPih6LN_3xy5kqM_6ipw' \
+  -H 'content-length: 138' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Member safe window.","maxScore":81,"minScore":8,"description":"Industry kind identify new role bank.","estimatedTime":"2 weeks"}'

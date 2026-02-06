@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/users request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/authentication/login request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/files request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/courses request method POST
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hook.py:25 Make request to http://localhost:8000/api/v1/courses/5c6beea7-dd53-460f-98f2-e798e96832fa request method PATCH
+INFO     HTTP_CLIENT:event_hook.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses/5c6beea7-dd53-460f-98f2-e798e96832fa
+INFO     BASE_ASSERTIONS:base.py:15 Check that response status code equals to 200
+INFO     COURSE_ASSERTIONS:courses.py:24 Check update course response
+INFO     BASE_ASSERTIONS:base.py:31 Check that "title" equals to Member safe window.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "max_score" equals to 81
+INFO     BASE_ASSERTIONS:base.py:31 Check that "min_score" equals to 8
+INFO     BASE_ASSERTIONS:base.py:31 Check that "description" equals to Industry kind identify new role bank.
+INFO     BASE_ASSERTIONS:base.py:31 Check that "estimated_time" equals to 2 weeks
+INFO     SHEMA_ASSERTIONS:schema.py:19 Validate JSON schema
